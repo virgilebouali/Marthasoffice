@@ -12,7 +12,7 @@ import { Form } from "./components/Form";
 import "animate.css";
 import { Footer } from "./components/Footer";
 import { Cta } from "./components/Cta";
-import { NavbarMobile } from "./components/NavbarMobile";
+import { NavbarMobile } from "./components/navbarMobile";
 
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
