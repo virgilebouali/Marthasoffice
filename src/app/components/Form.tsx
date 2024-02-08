@@ -30,7 +30,7 @@ export const Form = () => {
                 <h2 className="text-lg font-extrabold">Réseaux sociaux</h2>
                 <ul className="flex mt-3 space-x-4">
                     <li className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-                        <a href="javascript:void(0)">
+                        <a href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill='#007bff'
                                 viewBox="0 0 24 24">
                                 <path
@@ -40,7 +40,7 @@ export const Form = () => {
                         </a>
                     </li>
                     <li className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-                        <a href="javascript:void(0)">
+                        <a href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill='#007bff'
                                 viewBox="0 0 511 512">
                                 <path
@@ -50,7 +50,7 @@ export const Form = () => {
                         </a>
                     </li>
                     <li className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-                        <a href="javascript:void(0)">
+                        <a href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill='#007bff'
                                 viewBox="0 0 24 24">
                                 <path

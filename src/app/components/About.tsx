@@ -10,7 +10,7 @@ export const About = () => {
                     </svg>,
                 title: "Fast Refresh",
                 desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus.",
-                href: "javascript:void(0)"
+                href: "#"
             },
             {
                 icon:
@@ -19,7 +19,7 @@ export const About = () => {
                     </svg>,
                 title: "Analytics",
                 desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus.",
-                href: "javascript:void(0)"
+                href: "#"
             },
             {
                 icon:
@@ -28,7 +28,7 @@ export const About = () => {
                     </svg>,
                 title: "Datacenter security",
                 desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus.",
-                href: "javascript:void(0)"
+                href: "#"
             },
             {
                 icon:
@@ -37,7 +37,7 @@ export const About = () => {
                     </svg>,
                 title: "Build on your terms",
                 desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus.",
-                href: "javascript:void(0)"
+                href: "#"
             },
             {
                 icon:
@@ -46,7 +46,7 @@ export const About = () => {
                     </svg>,
                 title: "Safe to use",
                 desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus.",
-                href: "javascript:void(0)"
+                href: "#"
             },
             {
                 icon:
@@ -55,12 +55,12 @@ export const About = () => {
                     </svg>,
                 title: "Flexible",
                 desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus.",
-                href: "javascript:void(0)"
+                href: "#"
             },
         ]
     
         return (
-            <section className="py-8 -z-50">
+            <section className="py-8 -z-100">
                 <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8 mt-12">
                     <div className="max-w-xl space-y-3">
                         <h3 className="text-pink-500 text-3xl font-semibold sm:text-4xl">

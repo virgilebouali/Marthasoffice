@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 export const Features = () => {
   return (
-    <div>
+    <div className="-z-100">
 
         <section className=" text-gray-100 animate__animated animate__fadeIn animate__delay-1s">
 	<div className="container max-w-xl  space-y-24 lg:px-8 lg:max-w-7xl w-full p-12 shadow-2xl shadow-pink-200">

@@ -38,8 +38,8 @@ export default function Home() {
     <div className="">
       <div className="">
         <div className="lg:hidden bg-white"></div>
-        <main className="lg:mx-56 sm:mx-0 sm:block border-r-2 border-l-2 shadow-xl z-100 bg-white">
-          <div className="mb-16 w-full">
+        <main className="lg:mx-56 sm:mx-0 sm:block border-r-2 border-l-2 shadow-xl  bg-white">
+          <div className="mb-16 w-full z-50">
             {isMobile ? <NavbarMobile /> : <NavbarDesktop />}
           </div>
           <div>
@@ -48,19 +48,19 @@ export default function Home() {
           <div>
             <Stats />
           </div>
-          <div className="animate__animated animate__fadeIn animate__delay-2s">
+          <div className=" z-0 animate__animated animate__fadeIn animate__delay-2s">
             <About />
           </div>
-          <div className="-z-100 animate__animated animate__fadeIn animate__delay-2s">
+          <div className="z-0 animate__animated animate__fadeIn animate__delay-2s">
             <Cta />
           </div>
-          <div className="animate__animated animate__fadeIn animate__delay-2s">
+          <div className=" z-0 animate__animated animate__fadeIn animate__delay-2s">
             <Features />
           </div>
-          <div className="animate__animated animate__fadeIn animate__delay-1s">
+          <div className=" z-0 animate__animated animate__fadeIn animate__delay-1s">
             <Testimonials />
           </div>
-          <div className="animate__animated animate__fadeIn animate__delay-2s">
+          <div className=" z-0 animate__animated animate__fadeIn animate__delay-2s">
             <Form />
           </div>
           <Footer />

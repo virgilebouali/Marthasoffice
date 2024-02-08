@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 export const Cta = () => {
   return (
-    <div className="-z-50">
+    <div className="z-0">
       <div className="container my-12 mx-auto md:px-6 rounded">
     <section className="mb-32 ">
       <div className="flex flex-wrap">

@@ -12,9 +12,9 @@ export const NavbarMobile = () => {
   };
 
   return (
-    <div className="z-100 bg-white">
+    <div className="z-50 bg-white">
       <div className=" flex place-items-right overflow-x-scroll rounded-lg lg:overflow-visible">
-        <div className="fixed z-100 ">
+        <div className="fixed z-50 ">
           <nav className="w-screen justify-between top-0 z-50 block px-4 py-2 border rounded-none shadow-md botext-blue-500/80 bg-white  lg:px-8 lg:py-4">
             <div className="flex items-right justify-between text-blue-gray-900 ">
               <Link href="#" className="mr-4 block cursor-pointer py-1.5 text-2xl font-sans rounded font-medium leading-relaxed text-inherit antialiased text-pink-500 tracking-tighter sm:items-center sm:text-center">
