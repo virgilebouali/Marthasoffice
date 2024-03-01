@@ -17,9 +17,8 @@ export const NavbarMobile = () => {
         <div className="fixed z-50 ">
           <nav className="w-screen justify-between top-0 z-50 block px-4 py-2 border rounded-none shadow-md botext-blue-500/80 bg-white  lg:px-8 lg:py-4">
             <div className="flex items-right justify-between text-blue-gray-900 ">
-              <Link href="#" className="mr-4 block cursor-pointer py-1.5 text-2xl font-sans rounded font-medium leading-relaxed text-inherit antialiased text-pink-500 tracking-tighter sm:items-center sm:text-center">
-                <Image src="/headerlogo1.png" width={100} height={100} alt='logo' className="contain" />
-              </Link>
+            <Image src="/icons8-poupée-russe-96.png " width={40} height={20}  alt="" />
+              <h3 className="font-bold text-red flex justify-between text-2xl gap-2">Martha's  <span className="text-blue ">     Office </span></h3>
               <div className="flex items-center gap-4">
                 <div className="hidden mr-4 lg:block">
                   <ul className="flex flex-col gap-2 mt-2 mb-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
@@ -62,29 +61,25 @@ export const NavbarMobile = () => {
               </div>
             </div>
             {isMenuOpen && (
-  <div className=" bg-white top-full left-0 right-0 p-4 border rounded-md z-50">
+  <div className=" bg-white top-full left-0 right-0 p-4  rounded-md z-50">
     <div className="">
     <ul className="flex flex-col gap-4">
       <li className="block p-2 text-blue-gray-900">
         <Link href="#" className="flex items-center">
-          Menu Item 1
+          Services
         </Link>
       </li>
       <li className="block p-2 text-blue-gray-900">
         <Link href="#" className="flex items-center">
-          Menu Item 2
+          Devenir partenaire
         </Link>
       </li>
       <li className="block p-2 text-blue-gray-900">
         <Link href="#" className="flex items-center">
-          Menu Item 2
+          Me contacter
         </Link>
       </li>
-      <li className="block p-2 text-blue-gray-900">
-        <Link href="#" className="flex items-center">
-          Menu Item 2
-        </Link>
-      </li>
+
       {/* Ajoutez autant d'éléments de menu que nécessaire */}
     </ul>
     </div>

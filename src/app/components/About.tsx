@@ -1,4 +1,5 @@
 import React from 'react'
+import { useEffect, useState } from 'react';
 
 export const About = () => {
 
@@ -58,15 +59,34 @@ export const About = () => {
                 href: "#"
             },
         ]
+
+        const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkIsMobile = () => {
+      setIsMobile(window.matchMedia('(max-width: 767px)').matches);
+    };
+
+    // Vérifiez au chargement de la page
+    checkIsMobile();
+
+   
+  }, []);
     
         return (
-            <section className="py-8 -z-100">
+            <section className="py-8 -z-100 mt-12 mb-12 rounded-3xl shadow-inner sm:bg-blue"
+            style={{
+                backgroundImage: `url("/bgabout2.png")`,
+                backgroundSize: 'cover',
+          
+                  }}>
+                
                 <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8 mt-12">
                     <div className="max-w-xl space-y-3">
-                        <h3 className="text-pink-500 text-3xl font-semibold sm:text-4xl">
+                        <h3 className="text-white text-3xl font-semibold sm:text-4xl">
                             Simple solutions for complex issues
                         </h3>
-                        <p>
+                        <p className="text-white">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus
                         </p>
                     </div>
@@ -75,14 +95,14 @@ export const About = () => {
                             {
                                 features.map((item, idx) => (
                                     <li key={idx} className="flex gap-x-4">
-                                        <div className="flex-none w-12 h-12 bg-blue-500 text-white rounded-lg flex items-center justify-center">
+                                        <div className="flex-none w-12 h-12 bg-orange    text-white rounded-lg flex items-center justify-center">
                                             {item.icon}
                                         </div>
                                         <div className="space-y-3">
-                                            <h4 className="text-lg text-gray-800 font-semibold">
+                                            <h4 className="text-lg text-white font-semibold">
                                                 {item.title}
                                             </h4>
-                                            <p>
+                                            <p className="text-white">
                                                 {item.desc}
                                             </p>
                                             

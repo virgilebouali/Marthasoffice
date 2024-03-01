@@ -8,7 +8,11 @@ export const Testimonials = () => {
   return (
     <>
     <h2 className="text-3xl font-bold tracki text-center sm:text-5xl text-blue-500 py-12 "> {`Ce qu&apos;ils disent de moi`}  </h2>
-    <div className="lg:flex gap-12 sm:block md:block p-6 ">
+    <div className="lg:flex gap-12 sm:block md:block p-6 "
+	style={{
+		backgroundImage: `url("/bgtesti.png")`,
+
+	}}>
    
 <div className="container mb-6 flex flex-col w-full max-w-lg p-6 mx-auto divide-y rounded-md dark:divide-gray-700 dark:bg-gray-900 dark:text-gray-100 border-2 border-blue-400 shadow-xl">
 	<div className="flex justify-between p-4">
