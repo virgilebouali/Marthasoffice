@@ -41,7 +41,7 @@ export default function Home() {
     <div className="">
       <div className="" >
         <div className="lg:hidden bg-white " ></div>
-        <main className=" sm:mx-0 sm:block w-full shadow-xl  bg-white "
+        <main className=" sm:mx-0 sm:block w-full shadow-xl  bg-white animate__fadeIn animate__delay-2s "
         >
           <div className="mb-12 w-full z-50" >
             {isMobile ? <NavbarMobile /> : ""}
