@@ -5,15 +5,15 @@ export const Cta = () => {
   return (
     <div className="z-0 mt-24">
       <div className="container my-12 mx-auto md:px-6 rounded">
-    <section className="mb-32 ">
+    <section className="mb-32">
       <div className="flex flex-wrap">
-        <div className="mb-12 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-5/12">
+        <div className="mb-12 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-5/12 rounded">
           <div className="flex lg:py-12">
             <Image src="/corpo1.jpg" width={500} height={500}
               className="w-full rounded-lg shadow-lg shadow-black/20 lg:ml-[50px]" alt="image" />
           </div>
         </div>
-        <div className="w-full shrink-0 grow-0 basis-auto lg:w-7/12 shadow-2xl">
+        <div className="w-full shrink-0 grow-0 basis-auto lg:w-7/12 shadow-2xl rounded-3xl">
           <div className="flex h-full items-center rounded-3xl p-6 text-center text-white lg:pl-12 lg:text-left"
           style={{
             backgroundImage: `url("/bgcta2.png")`,

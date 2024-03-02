@@ -41,7 +41,7 @@ export default function Home() {
     <div className="">
       <div className="" >
         <div className="lg:hidden bg-white " ></div>
-        <main className="lg:mx-56 sm:mx-0 sm:block border-r-2 border-l-2 shadow-xl  bg-white "
+        <main className=" sm:mx-0 sm:block w-full shadow-xl  bg-white "
         >
           <div className="mb-12 w-full z-50" >
             {isMobile ? <NavbarMobile /> : ""}

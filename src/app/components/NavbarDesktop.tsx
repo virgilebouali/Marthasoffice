@@ -24,7 +24,7 @@ export const NavbarDesktop = () => {
             
                 <div className="hidden mr-4 lg:block w-full text-center items-center ml-36" >
                 
-                  <ul className="flex flex-col  gap-2 mt-2 mb-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 text-center justify-center">
+                  <ul className="flex flex-col  gap-2 mt-2 mb-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 text-center justify-evenly">
                     <li className="block p-1 text-blue-gray-900">
                       <Link href="#" className="flex items-center hover:shadow-blue-100  hover:text-red p-4 rounded-xl">
                         Services

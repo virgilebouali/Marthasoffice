@@ -17,7 +17,7 @@ export const NavbarMobile = () => {
         <div className="fixed z-50 ">
           <nav className="w-screen justify-between top-0 z-50 block px-4 py-2 border rounded-none shadow-md botext-blue-500/80 bg-white  lg:px-8 lg:py-4">
             <div className="flex items-right justify-between text-blue-gray-900 ">
-            <Image src="/icons8-poupée-russe-96.png " width={40} height={20}  alt="" />
+            <Image src="/icons8-poupée-russe-96.png " width={40} height={40}  alt="" />
               <h3 className="font-bold text-red flex justify-between text-2xl gap-2">Martha's  <span className="text-blue ">     Office </span></h3>
               <div className="flex items-center gap-4">
                 <div className="hidden mr-4 lg:block">

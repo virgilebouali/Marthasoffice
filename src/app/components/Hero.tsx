@@ -5,7 +5,7 @@ import { NavbarDesktop } from './NavbarDesktop'
 
 export const Hero = () => {
   return (
-    <div className="lg:block sm:block md:block  lg:w-full sm:w-fit w-auto">
+    <div className="lg:block sm:block md:block  lg:w-full sm:w-fit w-auto ease-in">
 		<NavbarDesktop />
 <section
         className="bg-cover bg-center relative text-black w-full rounded-3xl"
@@ -25,14 +25,14 @@ export const Hero = () => {
       className="rounded-full border-2-b  shadow-xl  lg:mr-12"
     />		</div>
 		<div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left lg:-mt-12">
-		   <h3 className="mb-4 text-xl text-white" >Martha's Office <span> by</span>  </h3>
+		   <h3 className="mb-4 text-2xl sm:mt-4 text-white" >Directeur administratif et financier <span> </span>  </h3>
 			<h1 className="text-7xl font-bold text-white">
 				Cynthia Cereyon
 			</h1>
 			<h2 className=" sm:text-4xl md:text-4xl font-bold leadi mt-4">
 				<span className="text-white text-4xl w-fit">Mon travail est de simplifier le votre.</span>
 			</h2>
-			<p className="mt-6 mb-8 text-lg sm:mb-12 text-white">Une apport & une expertise plurifonctionnelles pour vous libérer de vos tâches administratves et vous permettre de faire croitre votre business en toute confiance.
+			<p className="mt-6 mb-8 text-lg sm:mb-12 text-white">Un apport & une expertise plurifonctionnelles pour vous libérer de vos tâches administratves et vous permettre de faire croitre votre business en toute confiance.
 			
 			</p>
 			<div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
