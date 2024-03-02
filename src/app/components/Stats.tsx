@@ -5,7 +5,7 @@ import CountUp from 'react-countup';
 
 export const Stats = () => {
   return (
-    <div > <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20  mt-6 mb-12  rounded-xl"
+    <div > <div className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20  mb-6  rounded-xl"
     >
     <div className="grid gap-6 row-gap-8 lg:grid-cols-5">
       <div className="grid gap-2 lg:col-span-2 divide-y-1">

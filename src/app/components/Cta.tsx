@@ -4,8 +4,8 @@ import Link  from 'next/link'
 export const Cta = () => {
   return (
     <div className="z-0 mt-24">
-      <div className="container my-12 mx-auto md:px-6 rounded">
-    <section className="mb-32">
+      <div className="container my-4 mx-auto md:px-6 rounded">
+    <section className="mb-6">
       <div className="flex flex-wrap">
         <div className="mb-12 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-5/12 rounded">
           <div className="flex lg:py-12">
