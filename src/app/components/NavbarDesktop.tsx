@@ -19,7 +19,7 @@ export const NavbarDesktop = () => {
           <nav className="justify-between  z-10 border shadow-md botext-blue-500/80 bg-opacity-80 backdrop-blur-2xl backdrop-saturate-200 lg:px-8 rounded-3xl">
             <div className=" justify-between items-center flex  text-blue-gray-900 ">
               <div className="flex items-center gap-4 w-full">
-              <Image src="/icons8-poupée-russe-96.png " width={40} height={40}  alt="" />
+              <Image src="/icons8-poupée-russe-96.png" width={40} height={40}  alt="" />
               <h3 className="font-bold text-red flex justify-between text-2xl gap-2">Martha's  <span className="text-blue ">     Office </span></h3>
             
                 <div className="hidden mr-4 lg:block w-full text-center items-center ml-36" >
