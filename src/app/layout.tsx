@@ -16,9 +16,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth" >
       <head>
-        
+      <link rel="icon" href="/favicon-32x32.png" sizes="any" />
+
       </head>
       <body className={poppins.className}>
         <div className=" shadow-2xl shadow-white bg-pink">{children}</div></body>
