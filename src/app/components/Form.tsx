@@ -16,7 +16,7 @@ export const Form = () => {
 
     try {
       // Exemple: Utilisez fetch pour envoyer le formulaire à votre endpoint FormSubmit.
-      const response = await fetch("https://formsubmit.co/virgile.bouali@gmail.com", {
+      const response = await fetch("https://formsubmit.co/883a1c378edad7a2bb7ed7f5276d0342", {
         method: "POST",
         // Ajoutez les en-têtes nécessaires et le corps du formulaire ici.
       });
