@@ -13,7 +13,7 @@ export const NavbarMobile = () => {
 
   return (
     <div className="z-50 bg-white">
-      <div className=" flex place-items-right overflow-x-scroll rounded-lg lg:overflow-visible">
+      <div className=" flex place-items-right overflow-x-scroll lg:overflow-visible">
         <div className="fixed z-50 ">
           <nav className="w-screen justify-between top-0 z-50 block px-4 py-2 border rounded-none shadow-md botext-blue-500/80 bg-white  lg:px-8 lg:py-4">
             <div className="flex items-right justify-between text-blue-gray-900 ">
@@ -23,18 +23,18 @@ export const NavbarMobile = () => {
                 <div className="hidden mr-4 lg:block">
                   <ul className="flex flex-col gap-2 mt-2 mb-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
                     <li className="block p-1 text-blue-gray-900">
-                      <Link href="#" className="flex items-center hover:text-blue-600 hover:shadow-xl">
+                      <Link href="#services" className="flex items-center hover:text-blue-600 hover:shadow-xl">
                         Solutions
                       </Link>
                     </li>
                     <li className="block p-1 text-blue-gray-900">
-                      <Link href="#" className="flex items-center hover:text-blue-600 hover:shadow-xl">
-                        Me rejoindre
+                      <Link href="#cta" className="flex items-center hover:text-blue-600 hover:shadow-xl">
+                        Devenir partenaire
                       </Link>
                     </li>
                     <li className="block p-1 text-blue-gray-900">
                       <Link href="#" className="flex items-center hover:text-blue-600 hover:shadow-xl">
-                        Ils parlent de moi
+                        Me contacter
                       </Link>
                     </li>
                     <li className="block p-1 text-blue-gray-900">
@@ -62,20 +62,20 @@ export const NavbarMobile = () => {
             </div>
             {isMenuOpen && (
   <div className=" bg-white top-full left-0 right-0 p-4  rounded-md z-50">
-    <div className="">
+    <div className="z-50">
     <ul className="flex flex-col gap-4">
       <li className="block p-2 text-blue-gray-900">
-        <Link href="#" className="flex items-center">
+        <Link href="#services" className="flex items-center">
           Services
         </Link>
       </li>
       <li className="block p-2 text-blue-gray-900">
-        <Link href="#" className="flex items-center">
+        <Link href="#cta" className="flex items-center">
           Devenir partenaire
         </Link>
       </li>
       <li className="block p-2 text-blue-gray-900">
-        <Link href="#" className="flex items-center">
+        <Link href="#form" className="flex items-center">
           Me contacter
         </Link>
       </li>

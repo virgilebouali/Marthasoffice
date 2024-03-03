@@ -8,7 +8,7 @@ export const Hero = () => {
     <div className="lg:block sm:block md:block  lg:w-full sm:w-fit w-auto ease-in">
 		<NavbarDesktop />
 <section
-        className="bg-cover bg-center relative text-black w-full rounded-3xl"
+        className="bg-cover bg-center relative text-black w-full sm:rounded-3xl lg:mt-6"
         style={{
 			backgroundImage: `url("/bg2.png")`,
 			backgroundSize: 'cover',
@@ -25,7 +25,7 @@ export const Hero = () => {
       className="rounded-full border-2-b  shadow-xl  lg:mr-12"
     />		</div>
 		<div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left lg:-mt-12">
-		   <h3 className="mb-4 text-2xl sm:mt-4 text-white" >Directeur administratif et financier <span> </span>  </h3>
+		   <h3 className="mb-4 text-2xl mt-8 text-white" >Directeur administratif et financier <span> </span>  </h3>
 			<h1 className="text-7xl font-bold text-white">
 				Cynthia Cereyon
 			</h1>

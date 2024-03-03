@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { Hero2 } from "./components/Hero2";
-
+import { InView } from 'react-intersection-observer';
 import { Features } from "./components/Features";
 import { Testimonials } from "./components/Testimonials";
 import { About } from "./components/About";
@@ -16,6 +16,10 @@ import { Footer } from "./components/Footer";
 import { Cta } from "./components/Cta";
 import { NavbarMobile } from "./components/navbarMobile";
 import { InfiniteMovingCardsDemo } from "./components/testimonialanimation";
+import BackToTopButton from "./components/backToTop";
+import { useRouter } from 'next/navigation';
+import { Toaster, toast } from 'sonner'
+
 
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
@@ -37,36 +41,75 @@ export default function Home() {
     };
   }, []);
 
+  const router = useRouter();
+
+  useEffect(() => {
+    // Vérifier si la redirection a déjà eu lieu
+    const redirectKey = 'redirectedToIntro';
+    const alreadyRedirected = localStorage.getItem(redirectKey);
+
+    if (!alreadyRedirected) {
+      // Rediriger vers /intro et marquer la redirection
+      router.push('/intro');
+      localStorage.setItem(redirectKey, 'true');
+    }
+  }, []);
+
   return (
     <div className="">
-      <div className="" >
-        <div className="lg:hidden bg-white " ></div>
-        <main className=" sm:mx-0 sm:block w-full shadow-xl  bg-white animate__fadeIn animate__delay-2s "
-        >
-          <div className="mb-12 w-full z-50" >
-            {isMobile ? <NavbarMobile /> : ""}
-            <Hero />
-          </div>
-          <hr className="border-red mx-24"/>
-          <div>
-            <Stats />
-          </div>
-          <hr className="border-blue mx-24"/>
-          <div className=" z-0 animate__animated animate__fadeIn animate__delay-2s">
-            <About />
-          </div>
-          <hr className="border-red mx-24"/>
+      <div className="">
+        <div className="lg:hidden bg-white "></div>
+        <main className="sm:mx-0 sm:block w-full shadow-xl bg-white">
+          <InView triggerOnce>
+            {({ inView, ref }) => (
+              <div ref={ref} className={`mb-12 w-full z-50 ${inView ? 'animate__animated animate__fadeIn animate__delay-1s ' : ''}`}>
+                {isMobile ? <NavbarMobile /> : ""}
+                <Hero />
+              </div>
+            )}
+          </InView>
+          <BackToTopButton />
+          <hr className="border-red mx-24" />
+          <InView triggerOnce>
+            {({ inView, ref }) => (
+              <div ref={ref} className={` ${inView ? 'animate__animated animate__fadeIn animate__delay-1s -z-40' : ''}`}>
+                <Stats />
+              </div>
+            )}
+          </InView>
 
-          <div className="z-0 animate__animated animate__fadeIn animate__delay-2s">
-            <Cta />
-          </div>
-          <hr className="border-blue mx-24"/>
-
-          <div className=" z-0 animate__animated animate__fadeIn animate__delay-1s">
-<InfiniteMovingCardsDemo />
-          </div>
-
-          <Footer />
+          <hr className="border-blue mx-24" />
+          <InView triggerOnce>
+            {({ inView, ref }) => (
+              <div ref={ref} className={`z-0 animate__animated animate__fadeIn animate__delay-1s  ${inView ? 'animate__animated animate__fadeIn animate__delay-1s -z-40 ' : ''}`}>
+                <About />
+              </div>
+            )}
+          </InView>
+          <hr className="border-red mx-24" />
+          <InView triggerOnce>
+            {({ inView, ref }) => (
+              <div ref={ref} className={`z-0 animate__animated animate__fadeIn animate__delay-1s  ${inView ? 'animate__animated animate__fadeIn animate__delay-1s -z-40' : ''}`}>
+                <Cta />
+              </div>
+            )}
+          </InView>
+          <hr className="border-blue mx-24" />
+          <InView triggerOnce>
+            {({ inView, ref }) => (
+              <div ref={ref} className={`z-0 animate__animated animate__fadeIn animate__delay-1s  ${inView ? 'animate__animated animate__fadeIn animate__delay-1s -z-40' : ''}`}>
+                <InfiniteMovingCardsDemo />
+              </div>
+            )}
+          </InView>
+          <InView triggerOnce>
+            {({ inView, ref }) => (
+              <div ref={ref} className={`z-0 animate__animated animate__fadeIn animate__delay-1s  ${inView ? 'animate__animated animate__fadeIn animate__delay-1s -z-40' : ''}`}>
+ <Form />              </div>
+            )}
+          </InView>
+         
+          <Footer  />
         </main>
       </div>
     </div>

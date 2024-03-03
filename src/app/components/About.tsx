@@ -79,9 +79,10 @@ export const About = () => {
                 backgroundImage: `url("/bgabout2.png")`,
                 backgroundSize: 'cover',
           
-                  }}>
+                  }}
+                  id="services">
                 
-                <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8 mt-12">
+                <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8 mt-4">
                     <div className="max-w-xl space-y-3">
                         <h3 className="text-white text-3xl font-semibold sm:text-4xl">
                             Service de directeur administratif et financier

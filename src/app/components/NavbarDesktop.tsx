@@ -18,20 +18,21 @@ export const NavbarDesktop = () => {
         <div className="  justify-between ">
           <nav className="justify-between  z-10 border shadow-md botext-blue-500/80 bg-opacity-80 backdrop-blur-2xl backdrop-saturate-200 lg:px-8 rounded-3xl">
             <div className=" justify-between items-center flex  text-blue-gray-900 ">
-              <div className="flex items-center gap-4 w-full">
+              <div className="flex items-center gap-4 w-full"> <Link href="/">
               <Image src="/icons8-poupée-russe-96.png" width={40} height={40}  alt="" />
+              </Link>
               <h3 className="font-bold text-red flex justify-between text-2xl gap-2">Martha's  <span className="text-blue ">     Office </span></h3>
-            
+
                 <div className="hidden mr-4 lg:block w-full text-center items-center ml-36" >
                 
                   <ul className="flex flex-col  gap-2 mt-2 mb-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 text-center justify-evenly">
                     <li className="block p-1 text-blue-gray-900">
-                      <Link href="#" className="flex items-center hover:shadow-blue-100  hover:text-red p-4 rounded-xl">
+                      <Link href="#services" className="flex items-center hover:shadow-blue-100  hover:text-red p-4 rounded-xl" >
                         Services
                       </Link>
                     </li>
                     <li className="block p-1 text-blue-gray-900">
-                      <Link href="#" className="flex items-center   hover:shadow-blue-100 hover:text-red p-4 rounded-xl hover:text">
+                      <Link href="#cta" className="flex items-center   hover:shadow-blue-100 hover:text-red p-4 rounded-xl hover:text">
                         Devenir partenaire
                       </Link>
                     </li>

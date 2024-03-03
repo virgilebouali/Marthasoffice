@@ -1,81 +1,124 @@
-import React from 'react'
+"use client"
 
-export const Form = () => {
-  return (
-    <div>
-        <div className="my-6 animate__animated animate__fadeIn animate__delay-1s bg-blue p-4">
-    <div className="grid sm:grid-cols-2 items-center gap-16 p-8 mx-auto max-w-4xl bg-white shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-md text-[#333]">
+import React from 'react'
+    import Image from 'next/image'
+    import Link from 'next/link'
+    import { useState } from 'react'
+    import { Toaster, toast } from 'sonner'
+
+    export const Form = () => {
+
+        const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+
+        const handleSubmit = async (e) => {
+          e.preventDefault();
+      
+          // Ajoutez ici votre logique d'envoi de formulaire avec FormSubmit.
+      
+          try {
+            // Exemple: Utilisez fetch pour envoyer le formulaire à votre endpoint FormSubmit.
+            const response = await fetch("https://formsubmit.co/virgile.bouali@gmail.com", {
+              method: "POST",
+              // Ajoutez les en-têtes nécessaires et le corps du formulaire ici.
+            });
+      
+            if (response.ok) {
+              // La soumission du formulaire a réussi.
+              setIsFormSubmitted(true);
+              toast.success('Votre message a été envoyé avec succès !');
+            } else {
+              // La soumission du formulaire a échoué. Gérez l'erreur ici.
+            }
+          } catch (error) {
+            console.error("Erreur lors de la soumission du formulaire:", error);
+          }
+        };
+
+    return (
         <div>
-            <h1 className="text-3xl font-extrabold text-pink-500">{`Let&apos;s Talk ! `}</h1>
-            <p className="text-sm text-gray-400 mt-3">{`Have some big idea or brand to develop and need help? Then reach out we&apos;d love to hear about your project and provide help.`}</p>
-            <div className="mt-12">
-                <ul className="mt-3">
-                    <li className="flex items-center">
-                        <div className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill='#007bff'
-                                viewBox="0 0 479.058 479.058">
-                                <path
-                                    d="M434.146 59.882H44.912C20.146 59.882 0 80.028 0 104.794v269.47c0 24.766 20.146 44.912 44.912 44.912h389.234c24.766 0 44.912-20.146 44.912-44.912v-269.47c0-24.766-20.146-44.912-44.912-44.912zm0 29.941c2.034 0 3.969.422 5.738 1.159L239.529 264.631 39.173 90.982a14.902 14.902 0 0 1 5.738-1.159zm0 299.411H44.912c-8.26 0-14.971-6.71-14.971-14.971V122.615l199.778 173.141c2.822 2.441 6.316 3.655 9.81 3.655s6.988-1.213 9.81-3.655l199.778-173.141v251.649c-.001 8.26-6.711 14.97-14.971 14.97z"
-                                    data-original="#000000" />
-                            </svg>
+            <section className="h-fit rounded-3xl mb-6 lg:mx-56 shadow-2xl  overflow-hidden" 
+            style={{
+                backgroundImage: `url("/bg2.png")`,
+                backgroundSize: 'cover',
+
+            }}>
+        <div className="container px-6 py-10 mx-auto">
+            <div className="block items-center lg:-mx-10 lg:flex">
+                <div className="lg:w-1/2 lg:mx-10">
+                    <h3 className="text-2xl font-semibold  capitalize text-white lg:text-3xl">Let’s talk</h3>
+
+                    <p className="mt-4 text-white">
+                        Ask us everything and we would love
+                        to hear from you
+                    </p>
+
+                    <form className="mt-12"  onSubmit={handleSubmit} >
+                        <div className="-mx-2 md:items-center md:flex">
+                            <div className="flex-1 px-2">
+                                <label className="block mb-2 text-sm text-white">Nom complet</label>
+                                <input type="text" name="name" placeholder="John Doe" required className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400text-white rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                            </div>
+
+                            <div className="flex-1 px-2 mt-4 md:mt-0">
+                                <label className="block mb-2 text-sm text-white">Adresse e-mail</label>
+                                <input type="email" name="email" placeholder="johndoe@example.com" required className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400text-white rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                            </div>
                         </div>
-                        <a target="blank" href="https://veilmail.io/e/FkKh7o" className="text-[#007bff] text-sm ml-3">
-                            <small className="block">Mail</small>
-                            <strong>email@email.com</strong>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div className="mt-12">
-                <h2 className="text-lg font-extrabold">Réseaux sociaux</h2>
-                <ul className="flex mt-3 space-x-4">
-                    <li className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-                        <a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill='#007bff'
-                                viewBox="0 0 24 24">
-                                <path
-                                    d="M6.812 13.937H9.33v9.312c0 .414.335.75.75.75l4.007.001a.75.75 0 0 0 .75-.75v-9.312h2.387a.75.75 0 0 0 .744-.657l.498-4a.75.75 0 0 0-.744-.843h-2.885c.113-2.471-.435-3.202 1.172-3.202 1.088-.13 2.804.421 2.804-.75V.909a.75.75 0 0 0-.648-.743A26.926 26.926 0 0 0 15.071 0c-7.01 0-5.567 7.772-5.74 8.437H6.812a.75.75 0 0 0-.75.75v4c0 .414.336.75.75.75zm.75-3.999h2.518a.75.75 0 0 0 .75-.75V6.037c0-2.883 1.545-4.536 4.24-4.536.878 0 1.686.043 2.242.087v2.149c-.402.205-3.976-.884-3.976 2.697v2.755c0 .414.336.75.75.75h2.786l-.312 2.5h-2.474a.75.75 0 0 0-.75.75V22.5h-2.505v-9.312a.75.75 0 0 0-.75-.75H7.562z"
-                                    data-original="#000000" />
+
+                        <div className="w-full mt-4">
+                            <label className="block mb-2 text-sm text-white">Message</label>
+                            <textarea name="message"  required className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400text-white rounded-md md:h-56 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" placeholder="Message"></textarea>
+                        </div>
+
+                        <button type="submit" className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-blue transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 group mt-4">
+    <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-orange group-hover:h-full"></span>
+    <span className="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
+    <svg className="w-5 h-5 text-red" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+    </span>
+    <span className="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
+    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+    </span>
+    <span className="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">Envoyer</span>
+    </button>
+                    </form>
+                </div>
+                <Toaster position="top-center" richColors/>
+
+                <div className="mt-12 lg:flex lg:mt-0 lg:flex-col lg:items-center lg:w-1/2 lg:mx-10">
+                    <Image className="hidden object-cover mx-auto rounded-full lg:block shrink-0 w-96 h-96" src="/corpo2.jpg" width={500} height={500} alt=""/>
+
+                    <div className="mt-6 space-y-8 md:mt-8">
+                        <p className="flex items-start -mx-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 mx-2 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                             </svg>
-                        </a>
-                    </li>
-                    <li className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-                        <a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill='#007bff'
-                                viewBox="0 0 511 512">
-                                <path
-                                    d="M111.898 160.664H15.5c-8.285 0-15 6.719-15 15V497c0 8.285 6.715 15 15 15h96.398c8.286 0 15-6.715 15-15V175.664c0-8.281-6.714-15-15-15zM96.898 482H30.5V190.664h66.398zM63.703 0C28.852 0 .5 28.352.5 63.195c0 34.852 28.352 63.2 63.203 63.2 34.848 0 63.195-28.352 63.195-63.2C126.898 28.352 98.551 0 63.703 0zm0 96.395c-18.308 0-33.203-14.891-33.203-33.2C30.5 44.891 45.395 30 63.703 30c18.305 0 33.195 14.89 33.195 33.195 0 18.309-14.89 33.2-33.195 33.2zm289.207 62.148c-22.8 0-45.273 5.496-65.398 15.777-.684-7.652-7.11-13.656-14.942-13.656h-96.406c-8.281 0-15 6.719-15 15V497c0 8.285 6.719 15 15 15h96.406c8.285 0 15-6.715 15-15V320.266c0-22.735 18.5-41.23 41.235-41.23 22.734 0 41.226 18.495 41.226 41.23V497c0 8.285 6.719 15 15 15h96.403c8.285 0 15-6.715 15-15V302.066c0-79.14-64.383-143.523-143.524-143.523zM466.434 482h-66.399V320.266c0-39.278-31.953-71.23-71.226-71.23-39.282 0-71.239 31.952-71.239 71.23V482h-66.402V190.664h66.402v11.082c0 5.77 3.309 11.027 8.512 13.524a15.01 15.01 0 0 0 15.875-1.82c20.313-16.294 44.852-24.907 70.953-24.907 62.598 0 113.524 50.926 113.524 113.523zm0 0"
-                                    data-original="#000000" />
+
+                            <span className="mx-2 text-white truncate w-72 dark:text-gray-400">
+                                Vincennes, France.
+                            </span>
+                        </p>
+
+                        <p className="flex items-start -mx-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 mx-2 text-white dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                             </svg>
-                        </a>
-                    </li>
-                    <li className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-                        <a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill='#007bff'
-                                viewBox="0 0 24 24">
-                                <path
-                                    d="M12 9.3a2.7 2.7 0 1 0 0 5.4 2.7 2.7 0 0 0 0-5.4Zm0-1.8a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Zm5.85-.225a1.125 1.125 0 1 1-2.25 0 1.125 1.125 0 0 1 2.25 0ZM12 4.8c-2.227 0-2.59.006-3.626.052-.706.034-1.18.128-1.618.299a2.59 2.59 0 0 0-.972.633 2.601 2.601 0 0 0-.634.972c-.17.44-.265.913-.298 1.618C4.805 9.367 4.8 9.714 4.8 12c0 2.227.006 2.59.052 3.626.034.705.128 1.18.298 1.617.153.392.333.674.632.972.303.303.585.484.972.633.445.172.918.267 1.62.3.993.047 1.34.052 3.626.052 2.227 0 2.59-.006 3.626-.052.704-.034 1.178-.128 1.617-.298.39-.152.674-.333.972-.632.304-.303.485-.585.634-.972.171-.444.266-.918.299-1.62.047-.993.052-1.34.052-3.626 0-2.227-.006-2.59-.052-3.626-.034-.704-.128-1.18-.299-1.618a2.619 2.619 0 0 0-.633-.972 2.595 2.595 0 0 0-.972-.634c-.44-.17-.914-.265-1.618-.298-.993-.047-1.34-.052-3.626-.052ZM12 3c2.445 0 2.75.009 3.71.054.958.045 1.61.195 2.185.419A4.388 4.388 0 0 1 19.49 4.51c.457.45.812.994 1.038 1.595.222.573.373 1.227.418 2.185.042.96.054 1.265.054 3.71 0 2.445-.009 2.75-.054 3.71-.045.958-.196 1.61-.419 2.185a4.395 4.395 0 0 1-1.037 1.595 4.44 4.44 0 0 1-1.595 1.038c-.573.222-1.227.373-2.185.418-.96.042-1.265.054-3.71.054-2.445 0-2.75-.009-3.71-.054-.958-.045-1.61-.196-2.185-.419A4.402 4.402 0 0 1 4.51 19.49a4.414 4.414 0 0 1-1.037-1.595c-.224-.573-.374-1.227-.419-2.185C3.012 14.75 3 14.445 3 12c0-2.445.009-2.75.054-3.71s.195-1.61.419-2.185A4.392 4.392 0 0 1 4.51 4.51c.45-.458.994-.812 1.595-1.037.574-.224 1.226-.374 2.185-.419C9.25 3.012 9.555 3 12 3Z">
-                                </path>
+
+                            <span className="mx-2 text-white truncate w-72 dark:text-gray-400">+33 62625849</span>
+                        </p>
+
+                        <p className="flex items-start -mx-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 mx-2 text-white dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                             </svg>
-                        </a>
-                    </li>
-                </ul>
+
+                            <span className="mx-2 text-white truncate w-72 dark:text-gray-400">acb@example.com</span>
+                        </p>
+                    </div>
+
+                </div>
             </div>
         </div>
-      
-        <form className="ml-auo space-y-4">
-            <input type='text' placeholder='Name'
-                className="w-full rounded-md py-2.5 px-4 border text-sm outline-[#007bff]" required/>
-            <input type='email' placeholder='Email'
-                className="w-full rounded-md py-2.5 px-4 border text-sm outline-[#007bff]" required/>
-            <input type='text' placeholder='Subject'
-                className="w-full rounded-md py-2.5 px-4 border text-sm outline-[#007bff]" required/>
-            <textarea placeholder='Message' rows={6}
-                className="w-full rounded-md px-4 border text-sm pt-2.5 outline-[#007bff] required"></textarea>
-            <button type='button'
-                className="text-white bg-[#007bff] hover:bg-blue-600 font-semibold rounded-md text-sm px-4 py-2.5 w-full">Send</button>
-        </form>
-    </div>
-</div></div>
-  )
-}
+    </section></div>
+    )
+    }

@@ -33,6 +33,9 @@
     "react-countup": "^6.5.0",
     "react-dom": "^18",
     "react-hook-form": "^7.50.1",
+    "react-intersection-observer": "^9.8.1",
+    "smoothscroll-polyfill": "^0.4.4",
+    "sonner": "^1.4.3",
     "tailwind-merge": "^2.2.1",
     "tailwindcss-animate": "^1.0.7",
     "zod": "^3.22.4"

@@ -40,7 +40,7 @@ export const Footer = () => {
                         </div>
                     </div>
                     <hr className="border-blue"/>
-                    <p className="w-full text-center my-12 text-white">{`Copyright © 2024`}</p>
+                    <p className="w-full text-center my-4 text-white">{`Martha's Office Copyright © 2024`}</p>
                 </div>
             </div>
         </div></div>
