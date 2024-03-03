@@ -17,11 +17,11 @@ const BackToTopButton = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-
   const scrollToTop = () => {
-    router.push('', '', { scroll: false });
+    router.push('', { scroll: false });
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+  
   
 
   return (
