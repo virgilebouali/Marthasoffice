@@ -10,7 +10,7 @@ import React from 'react'
 
         const [isFormSubmitted, setIsFormSubmitted] = useState(false);
 
-        const handleSubmit = async (e) => {
+        const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
           e.preventDefault();
       
           // Ajoutez ici votre logique d'envoi de formulaire avec FormSubmit.
