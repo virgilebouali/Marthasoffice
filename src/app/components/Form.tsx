@@ -1,38 +1,43 @@
 "use client"
 
-import React from 'react'
-    import Image from 'next/image'
-    import Link from 'next/link'
-    import { useState } from 'react'
-    import { Toaster, toast } from 'sonner'
+import React, { useState } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { Toaster, toast } from 'sonner';
 
-    export const Form = () => {
+export const Form = () => {
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+  const [isPending, setIsPending] = useState(false);
 
-        const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
 
-        const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-          e.preventDefault();
-      
-          // Ajoutez ici votre logique d'envoi de formulaire avec FormSubmit.
-      
-          try {
-            // Exemple: Utilisez fetch pour envoyer le formulaire à votre endpoint FormSubmit.
-            const response = await fetch("https://formsubmit.co/virgile.bouali@gmail.com", {
-              method: "POST",
-              // Ajoutez les en-têtes nécessaires et le corps du formulaire ici.
-            });
-      
-            if (response.ok) {
-              // La soumission du formulaire a réussi.
-              setIsFormSubmitted(true);
-              toast.success('Votre message a été envoyé avec succès !');
-            } else {
-              // La soumission du formulaire a échoué. Gérez l'erreur ici.
-            }
-          } catch (error) {
-            console.error("Erreur lors de la soumission du formulaire:", error);
-          }
-        };
+    setIsPending(true); // Définir l'état isPending à true lors de la soumission.
+
+    try {
+      // Exemple: Utilisez fetch pour envoyer le formulaire à votre endpoint FormSubmit.
+      const response = await fetch("https://formsubmit.co/virgile.bouali@gmail.com", {
+        method: "POST",
+        // Ajoutez les en-têtes nécessaires et le corps du formulaire ici.
+      });
+
+      if (response.ok) {
+        // La soumission du formulaire a réussi.
+        setIsFormSubmitted(true);
+        toast.success('Votre message a été envoyé avec succès !');
+      } else {
+        // La soumission du formulaire a échoué. Gérez l'erreur ici.
+      }
+    } catch (error) {
+      console.error("Erreur lors de la soumission du formulaire:", error);
+    } finally {
+      // Utiliser setTimeout pour réinitialiser isPending à false après 3 secondes.
+      setTimeout(() => {
+        setIsPending(false);
+      }, 3000);
+    }
+  };
+
 
     return (
         <div>
@@ -70,16 +75,27 @@ import React from 'react'
                             <textarea name="message"  required className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400text-white rounded-md md:h-56 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" placeholder="Message"></textarea>
                         </div>
 
-                        <button type="submit" className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-blue transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 group mt-4">
-    <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-orange group-hover:h-full"></span>
-    <span className="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
-    <svg className="w-5 h-5 text-red" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-    </span>
-    <span className="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
-    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-    </span>
-    <span className="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">Envoyer</span>
-    </button>
+                        <button
+            type="submit"
+            className="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group mt-6 "
+          >
+            
+            {isPending ? (
+              // Afficher un loader pendant la soumission.
+              <div
+              className=" inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
+              role="status">
+ <span className="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">
+                
+              </span>
+            </div>
+            ) : (
+              // Afficher le texte "Envoyer" quand il n'y a pas de soumission en cours.
+              <span className="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-red">
+                Envoyer
+              </span>
+            )}
+          </button>
                     </form>
                 </div>
                 <Toaster position="top-center" richColors/>
