@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Toaster, toast } from "sonner";
+import { Toast } from "../../../@/components/ui/toast";
 
 
 
@@ -31,8 +32,8 @@ export const Form = () => {
         const responseData = await response.json();
         console.log(responseData['message'])
 
-        alert('Message successfully sent');
-    } catch (err) {
+        toast.success('Message envoyé ! Nous vous recontacterons dans les plus brefs délais. Merci !')
+      } catch (err) {
         console.error(err);
         alert("Error, please try resubmitting the form");
     }
