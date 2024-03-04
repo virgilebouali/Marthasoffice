@@ -68,7 +68,7 @@ export const Form = () => {
               <form
                 className="mt-12"
                 onSubmit={handleSubmit}
-                action="https://formsubmit.co/virgile.bouali@gmail.com"
+                action="https://formsubmit.co/dummybotvirel@gmail.com"
                 method="POST"
               >
                 <div className="-mx-2 md:items-center md:flex">
