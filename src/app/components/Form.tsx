@@ -12,27 +12,33 @@ export const Form = () => {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [isPending, setIsPending] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  async function handleSubmit(event: any) {
 
-    setIsPending(true);
-
+    event.preventDefault();
+    const formData = new FormData(event.target)
     try {
-      // Simulate a delay (replace with your actual fetch call)
-      await new Promise((resolve) => setTimeout(resolve, 1000));
 
-      // The rest of your code remains the same
+        const response = await fetch('/api/contact', {
+            method: 'post',
+            body: formData,
+        });
 
-      setIsFormSubmitted(true);
-      toast.success("Votre message a été envoyé avec succès !");
-    } catch (error) {
-      console.error("Erreur lors de la soumission du formulaire:", error);
-    } finally {
-      // Simulate another delay before setting isPending to false
-      setTimeout(() => {
-        setIsPending(false);
-      }, 3000);
+        console.log(formData)
+        if (!response.ok) {
+            console.log("falling over")
+            throw new Error(`response status: ${response.status}`);
+        }
+        const responseData = await response.json();
+        console.log(responseData['message'])
+
+        alert('Message successfully sent');
+    } catch (err) {
+        console.error(err);
+        alert("Error, please try resubmitting the form");
     }
+
+  
+
   };
 
   return (
@@ -68,8 +74,7 @@ export const Form = () => {
               <form
                 className="mt-12"
                 onSubmit={handleSubmit}
-                action="https://formsubmit.co/dummybotvirel@gmail.com"
-                method="POST"
+
               >
                 <div className="-mx-2 md:items-center md:flex">
                   <div className="flex-1 px-2">
@@ -102,8 +107,8 @@ export const Form = () => {
                       Numéro de téléphone
                     </label>
                     <input
-                      type="tel"
-                      name="tel"
+                      type="telephone"
+                      name="telephone"
                       placeholder="+33656897545"
                       required
                       className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400text-white rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
@@ -125,7 +130,9 @@ export const Form = () => {
 
                 <button
                   type="submit"
+                  
                   className="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group mt-6 "
+                  
                 >
                   {isPending ? (
                     // Afficher un loader pendant la soumission.
