@@ -35,7 +35,7 @@ export const Form = () => {
         toast.success('Message envoyé ! Nous vous recontacterons dans les plus brefs délais. Merci !')
       } catch (err) {
         console.error(err);
-        alert("Error, please try resubmitting the form");
+        toast.error('Oups, quelque chose ne va pas. Veuillez réessayer.')
     }
 
   
