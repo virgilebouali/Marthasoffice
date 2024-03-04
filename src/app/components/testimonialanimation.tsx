@@ -6,7 +6,7 @@ import { InfiniteMovingCards } from "../components/ui/infinite-moving-cards";
 export function InfiniteMovingCardsDemo() {
   return (
     <div className="h-[40rem] rounded-md flex flex-col antialiased bg-white  bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-                 <h3 className="text-center text-black text-2xl mb-12 font-bold block "><span className="bg-red p-2 text-white rounded">Mes clients</span> parlent de moi</h3>
+              
 
       <InfiniteMovingCards
         items={testimonials}
@@ -20,31 +20,20 @@ export function InfiniteMovingCardsDemo() {
 const testimonials = [
   {
     quote:
-      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-    name: "Charles Dickens",
-    title: "A Tale of Two Cities",
+      "Le client exprime clairement son besoin d'assistance. Nous devrions mettre en place des actions immédiates pour répondre à ses attentes.",
+    name: "Charles",
+    title: "J’ai besoin qu’on s’occupe de ça.",
   },
   {
     quote:
-      "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-    name: "William Shakespeare",
-    title: "Hamlet",
+      "Le collaborateur souligne l'importance de se concentrer sur les aspects commerciaux. Nous devrions soutenir cette initiative en allouant les ressources nécessaires pour renforcer nos activités commerciales.",
+    name: "Helène",
+    title: "Je dois me focaliser sur le commercial.",
   },
   {
-    quote: "All that we see or seem is but a dream within a dream.",
-    name: "Edgar Allan Poe",
-    title: "A Dream Within a Dream",
+    quote: "Le client reconnaît l'impact positif de notre collaboration sur la valeur de ses services. Cela souligne l'importance d'un soutien continu pour maintenir et améliorer cette valeur perçue.",
+    name: "Edgar",
+    title: "With your help, I set a good value to my services.",
   },
-  {
-    quote:
-      "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-    name: "Jane Austen",
-    title: "Pride and Prejudice",
-  },
-  {
-    quote:
-      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-    name: "Herman Melville",
-    title: "Moby-Dick",
-  },
+  
 ];

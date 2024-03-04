@@ -35,8 +35,8 @@ export const TypewriterEffect = ({
           opacity: 1,
         },
         {
-          duration: 0.1,
-          delay: stagger(0.1),
+          duration: 0.15,
+          delay: stagger(0.09),
           ease: "easeInOut",
         }
       );
@@ -48,7 +48,12 @@ export const TypewriterEffect = ({
       <motion.div ref={scope} className="inline">
         {wordsArray.map((word, idx) => {
           return (
-            <div key={`word-${idx}`} className="inline-block">
+            <motion.div
+              key={`word-${idx}`}
+              className="inline-block"
+              initial={{ opacity: 0, display: "inline-block" }}
+              animate={{ opacity: 1 }}
+            >
               {word.text.map((char, index) => (
                 <motion.span
                   initial={{}}
@@ -61,20 +66,30 @@ export const TypewriterEffect = ({
                   {char}
                 </motion.span>
               ))}
-              &nbsp;
-            </div>
+              {idx < wordsArray.length - 1 && (
+                <motion.span
+                  initial={{}}
+                  className=" opacity-0 hidden text-md italic text-blue"
+                >
+                  &nbsp;
+                </motion.span>
+              )}
+            </motion.div>
           );
         })}
       </motion.div>
     );
   };
+  
+  
   return (
     <div
       className={cn(
-        "sm:text-sm md:text-xl lg:text-5xl font-bold text-center",
+        "text-2xl lg:text-xl  text-center",
         className
       )}
     >
+      {""}
       {renderWords()}
       <motion.span
         initial={{
@@ -84,12 +99,12 @@ export const TypewriterEffect = ({
           opacity: 1,
         }}
         transition={{
-          duration: 0.2,
+          duration: 0.15,
           repeat: Infinity,
           repeatType: "reverse",
         }}
         className={cn(
-          "inline-block rounded-sm w-[4px] h-4 md:h-6 lg:h-2 bg-white italic",
+          "inline-block rounded-sm w-[4px] h-4 md:h-6 lg:h-2 bg-white text-blue" ,
           cursorClassName
         )}
       ></motion.span>
@@ -125,7 +140,7 @@ export const TypewriterEffectSmooth = ({
               {word.text.map((char, index) => (
                 <span
                   key={`char-${index}`}
-                  className={cn(`dark:text-white text-black `, word.className)}
+                  className={cn(` text-black `, word.className)}
                 >
                   {char}
                 </span>
@@ -149,13 +164,13 @@ export const TypewriterEffectSmooth = ({
           width: "fit-content",
         }}
         transition={{
-          duration: 2,
-          ease: "linear",
+          duration: 6,
+          ease: "easeInOut",
           delay: 1,
         }}
       >
         <div
-          className="text-xs sm:text-base md:text-xl lg:text:3xl xl:text-5xl font-bold"
+          className="text-xs sm:text-base md:text-xl lg:text:3xl xl:text-5xl font-bold text-blue"
           style={{
             whiteSpace: "nowrap",
           }}
@@ -171,13 +186,13 @@ export const TypewriterEffectSmooth = ({
           opacity: 1,
         }}
         transition={{
-          duration: 0.4,
+          duration: 6,
 
           repeat: Infinity,
           repeatType: "reverse",
         }}
         className={cn(
-          "block rounded-sm w-[4px]  h-4 sm:h-6 xl:h-12 bg-white",
+          "block rounded-sm w-[4px]  h-4 sm:h-6 xl:h-12 text-blue",
           cursorClassName
         )}
       ></motion.span>

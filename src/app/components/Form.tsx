@@ -50,13 +50,23 @@ export const Form = () => {
         <div className="container px-6 py-10 mx-auto">
             <div className="block items-center lg:-mx-10 lg:flex">
                 <div className="lg:w-1/2 lg:mx-10">
-                    <h3 className="text-2xl font-semibold  capitalize text-white lg:text-3xl">Let’s talk</h3>
+                    <h3 className="text-2xl font-semibold  capitalize text-white lg:text-3xl">Prendre contact</h3>
 
                     <p className="mt-4 text-white">
-                        Ask us everything and we would love
-                        to hear from you
+                        Vous avez une question ou une demande de renseignements ? N'hésitez pas à me contacter en remplissant le formulaire ci-dessous.
                     </p>
-
+                    <div className="text-white mt-2">
+                      <ul>
+                        <li>
+                        - Un Point telephonique rapide (5 à 15 min)
+                        </li>
+                        <li>
+                        - ⁠un Entretien pour devis (30 min)
+                        </li>
+                        <li>
+                        - ⁠Plus d’information sur nos services (Emails / WhatsApp)                        </li>
+                      </ul>
+                    </div>
                     <form className="mt-12"  onSubmit={handleSubmit} >
                         <div className="-mx-2 md:items-center md:flex">
                             <div className="flex-1 px-2">
@@ -67,6 +77,10 @@ export const Form = () => {
                             <div className="flex-1 px-2 mt-4 md:mt-0">
                                 <label className="block mb-2 text-sm text-white">Adresse e-mail</label>
                                 <input type="email" name="email" placeholder="johndoe@example.com" required className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400text-white rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                            </div>
+                            <div className="flex-1 px-2 mt-4 md:mt-0">
+                                <label className="block mb-2 text-sm text-white">Numéro de téléphone</label>
+                                <input type="tel" name="tel" placeholder="+33656897545" required className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400text-white rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
                             </div>
                         </div>
 
