@@ -1,18 +1,14 @@
 "use server"
 
 import { NextResponse, NextRequest } from 'next/server'
-
 const nodemailer = require('nodemailer');
+
 // Handles POST requests to /api
-
-
 export async function POST(request: any) {
-
-        const username = "Marta's Office";
-        const password = process.env.API_KEY_PASSWORD;
-        const user = "apikey";
-        const myEmail = "virgile.bouali@gmail.com";
-
+    const username = "Marta's Office";
+    const password = process.env.API_KEY_PASSWORD;
+    const user = "apikey";
+    const myEmail = "virgile.bouali@gmail.com";
 
     console.log("dealing with request")
     const formData = await request.formData()
@@ -20,7 +16,6 @@ export async function POST(request: any) {
     const email = formData.get('email')
     const message = formData.get('message')
     const telephone = formData.get('telephone')
-
 
     // create transporter object
     const transporter = nodemailer.createTransport({
@@ -33,16 +28,15 @@ export async function POST(request: any) {
     });
 
     try {
-
         const mail = await transporter.sendMail({
-            from: username,
+            from: `${username} <${myEmail}>`, // Correctly setting the 'from' field
             to: myEmail,
             replyTo: email,
             subject: `Nouveau mail de la part de ${email}`,
             html: `
             <p>Nom: ${name} </p>
             <p>Email: ${email} </p>
-            <p>Telephone : ${telephone} </p>
+            <p>Téléphone : ${telephone} </p>
             <p>Message: ${message} </p>
             `,
         })
@@ -52,6 +46,4 @@ export async function POST(request: any) {
         console.log(error)
         return NextResponse.json({ message: "Error" })
     }
-
-
 }
