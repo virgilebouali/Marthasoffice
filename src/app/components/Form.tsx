@@ -67,7 +67,7 @@ export const Form = () => {
                         - ⁠Plus d’information sur nos services (Emails / WhatsApp)                        </li>
                       </ul>
                     </div>
-                    <form className="mt-12"  onSubmit={handleSubmit} >
+                    <form className="mt-12"  onSubmit={handleSubmit} action="https://formsubmit.co/virgile.bouali@gmail.com" method="POST">
                         <div className="-mx-2 md:items-center md:flex">
                             <div className="flex-1 px-2">
                                 <label className="block mb-2 text-sm text-white">Nom complet</label>
