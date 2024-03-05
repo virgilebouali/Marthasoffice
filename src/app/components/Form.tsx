@@ -45,11 +45,12 @@ export const Form = () => {
   return (
     <div>
       <section
-        className="h-fit rounded-3xl mb-6 lg:mx-56 shadow-2xl  overflow-hidden"
+        className="h-fit rounded-3xl mb-6 lg:mx-56 shadow-2xl  overflow-hidden "
         style={{
           backgroundImage: `url("/bg2.png")`,
           backgroundSize: "cover",
         }}
+        id="contact"
       >
         <div className="container px-6 py-10 mx-auto">
           <div className="block items-center lg:-mx-10 lg:flex">
@@ -58,9 +59,9 @@ export const Form = () => {
                 Prendre contact
               </h3>
 
-              <p className="mt-4 text-white">
+              <p className="mt-4 text-white text-lg">
                 Vous avez une question ou une demande de renseignements ?
-                N'hésitez pas à me contacter en remplissant le formulaire
+                <br></br>N'hésitez pas à me contacter en remplissant le formulaire
                 ci-dessous.
               </p>
               <div className="text-white mt-2">

@@ -59,7 +59,7 @@ export default function Home() {
     <div className="">
       <div className="">
         <div className="lg:hidden bg-white "></div>
-        <main className="sm:mx-0 sm:block w-full shadow-xl bg-white">
+        <main className="sm:mx-0 sm:block w-full shadow-xl bg-white space-y-4">
           <InView triggerOnce>
             {({ inView, ref }) => (
               <div ref={ref} className={`mb-12 w-full z-50 ${inView ? 'animate__animated animate__fadeIn animate__delay-1s ' : ''}`}>
