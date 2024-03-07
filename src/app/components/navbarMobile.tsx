@@ -12,9 +12,9 @@ export const NavbarMobile = () => {
   };
 
   return (
-    <div className="z-50 bg-white">
+    <div className=" bg-white">
       <div className=" flex place-items-right overflow-x-scroll lg:overflow-visible">
-        <div className="fixed z-50 ">
+        <div className=" z-50">
           <nav className="w-screen justify-between top-0 z-50 block px-4 py-2 border rounded-none shadow-md botext-blue-500/80 bg-white  lg:px-8 lg:py-4">
             <div className="flex items-right justify-between text-blue-gray-900 ">
             <Image src="/icons8-poupée-russe-96.png" width={40} height={40}  alt="" />

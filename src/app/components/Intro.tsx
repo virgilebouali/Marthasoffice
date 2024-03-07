@@ -5,40 +5,37 @@ import { ServicesIntro } from "./servicesIntro";
 export function TypewriterEffectDemo() {
     const words = [
         {
-          text: "En",
+          text: "MarthasOffice ",
         },
         {
-          text: "libérant",
+          text: "sécurise ",
         },
         {
-          text: "ses",
+          text: "votre ",
         },
         {
-          text: "clients",
+          text: "gestion",
         },
         {
-          text: "des",
+          text: "administrative,",
         },
         {
-          text: "contraintes",
+          text: "financière ",
         },
         {
-          text: "opérationnelles,",
+          text: "et",
         },
         {
-          text: "elle",
+          text: "accompagne ",
         },
         {
-          text: "contribue",
+          text: "votre ",
         },
         {
-          text: "à",
+          text: "stratégie",
         },
         {
-          text: "créer",
-        },
-        {
-          text: "un",
+          text: "Votre",
         },
         {
           text: "écosystème",
@@ -47,23 +44,15 @@ export function TypewriterEffectDemo() {
           text: "entrepreneurial",
         },
         {
-          text: "florissant,",
+          text: "est",
         },
         {
-          text: "stimulant",
+          text: "notre",
         },
         {
-          text: "l'innovation",
+          text: "priorité",
         },
-        {
-          text: "et",
-        },
-        {
-          text: "la",
-        },
-        {
-          text: "croissance.",
-        },
+       
         
       ];
       
@@ -75,7 +64,7 @@ export function TypewriterEffectDemo() {
 
     }}>
       <p className="text-white  text-2xl  mb-10">
-      L'impact va au-delà des chiffres.
+      Vous êtes dirigeant d’une start up ou PME en pleine croissance ?
       </p>
       <div className="h-[400px] lg:w-[700px] sm:w-[300px] text-4xl mb-6">
         

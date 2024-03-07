@@ -59,7 +59,7 @@ export default function Home() {
     <div className="">
       <div className="">
         <div className="lg:hidden bg-white "></div>
-        <main className="sm:mx-0 sm:block w-full shadow-xl bg-white space-y-4">
+        <main className="sm:mx-0 sm:block w-full shadow-xl bg-white space-y-4 ">
           <InView triggerOnce>
             {({ inView, ref }) => (
               <div ref={ref} className={`mb-12 w-full z-50 ${inView ? 'animate__animated animate__fadeIn animate__delay-1s ' : ''}`}>
@@ -71,7 +71,7 @@ export default function Home() {
           <BackToTopButton />
           <InView triggerOnce>
             {({ inView, ref }) => (
-              <div ref={ref} className={`z-0 animate__animated animate__fadeIn animate__delay-1s  ${inView ? 'animate__animated animate__fadeIn animate__delay-1s -z-40 ' : ''}`}>
+              <div ref={ref} className={` animate__animated animate__fadeIn animate__delay-1s  ${inView ? 'animate__animated animate__fadeIn animate__delay-1s -z-40 ' : ''}`}>
                 <About />
               </div>
             )}
@@ -86,21 +86,21 @@ export default function Home() {
          
           <InView triggerOnce>
             {({ inView, ref }) => (
-              <div ref={ref} className={`z-0 animate__animated animate__fadeIn animate__delay-1s  ${inView ? 'animate__animated animate__fadeIn animate__delay-1s -z-40' : ''}`}>
+              <div ref={ref} className={` animate__animated animate__fadeIn animate__delay-1s  ${inView ? 'animate__animated animate__fadeIn animate__delay-1s -z-40' : ''}`}>
                 <Cta />
               </div>
             )}
           </InView>
           <InView triggerOnce>
             {({ inView, ref }) => (
-              <div ref={ref} className={`z-0 animate__animated animate__fadeIn animate__delay-1s  ${inView ? 'animate__animated animate__fadeIn animate__delay-1s -z-40' : ''}`}>
+              <div ref={ref} className={` animate__animated animate__fadeIn animate__delay-1s  ${inView ? 'animate__animated animate__fadeIn animate__delay-1s -z-40' : ''}`}>
                 <InfiniteMovingCardsDemo />
               </div>
             )}
           </InView>
           <InView triggerOnce>
             {({ inView, ref }) => (
-              <div ref={ref} className={`z-0 animate__animated animate__fadeIn animate__delay-1s  ${inView ? 'animate__animated animate__fadeIn animate__delay-1s -z-40' : ''}`}>
+              <div ref={ref} className={`animate__animated animate__fadeIn animate__delay-1s  ${inView ? 'animate__animated animate__fadeIn animate__delay-1s -z-40' : ''}`}>
  <Form />              </div>
             )}
           </InView>

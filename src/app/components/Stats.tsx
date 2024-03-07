@@ -33,7 +33,7 @@ export const Stats = () => {
         </div>
       </div>
       <div className="grid border divide-y rounded-xl lg:col-span-3 sm:grid-cols-2 sm:divide-y-0 sm:divide-x shadow-2xl bg-white ">
-        <div className="flex flex-col justify-between p-12 text-blue gap-y-4">
+        <div className="flex flex-col justify-between p-6 text-blue gap-y-4">
           <div>
             <p className="text-2xl font-semibold text-red">
               P&L
@@ -54,7 +54,7 @@ export const Stats = () => {
           </div>
 
         </div>
-        <div className="flex flex-col justify-between p-12 text-white">
+        <div className="flex flex-col justify-between p-6 text-white">
           <div>
             <p className="text-2xl font-semibold text-red ">
               Jours-Homme

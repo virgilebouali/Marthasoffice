@@ -12,9 +12,9 @@ export const NavbarDesktop = () => {
   };
 
   return (
-    <div className=" w-full justify-between -z-50 " 
+    <div className=" w-full justify-between -z-50 hidden lg:block " 
     >
-      <div className="  w-full justify-between  ">
+      <div className="  w-full justify-between ">
         <div className="  justify-between ">
           <nav className="justify-between  border shadow-md botext-blue-500/80 bg-opacity-80 backdrop-blur-2xl backdrop-saturate-200 lg:px-8">
             <div className=" justify-between items-center flex  text-blue-gray-900 ">
@@ -68,35 +68,7 @@ export const NavbarDesktop = () => {
                 </button>
               </div>
             </div>
-            {isMenuOpen && (
-  <div className=" bg-white top-full left-0 right-0 p-4 border rounded-md">
-    <div className="">
-    <ul className="flex flex-col gap-4">
-      <li className="block p-2 text-blue-gray-900">
-        <Link href="#" className="flex items-center">
-          Menu Item 1
-        </Link>
-      </li>
-      <li className="block p-2 text-blue-gray-900">
-        <Link href="#" className="flex items-center">
-          Menu Item 2
-        </Link>
-      </li>
-      <li className="block p-2 text-blue-gray-900">
-        <Link href="#" className="flex items-center">
-          Menu Item 2
-        </Link>
-      </li>
-      <li className="block p-2 text-blue-gray-900">
-        <Link href="#" className="flex items-center">
-          Menu Item 2
-        </Link>
-      </li>
-      {/* Ajoutez autant d'éléments de menu que nécessaire */}
-    </ul>
-    </div>
-  </div>
-)}
+          
           </nav>
         </div>
       </div>
