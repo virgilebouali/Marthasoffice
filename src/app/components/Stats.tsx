@@ -39,7 +39,7 @@ export const Stats = () => {
               P&L
             </p>
             <p className="text-4xl font-bold text-deep-purple-accent-400 sm:text-2xl text-blue mt-4">
-            <CountUp end={7000000} duration={3} separator=" " />
+            <CountUp end={7000000} duration={10} separator=" " />
 €
             </p>
           </div>
@@ -48,7 +48,7 @@ export const Stats = () => {
               Projets
             </p>
             <p className="text-4xl font-bold text-deep-purple-accent-400 sm:text-2xl text-blue mt-4">
-            <CountUp end={38} duration={3} separator=" " />
+            <CountUp end={38} duration={10} separator=" " />
 
             </p>
           </div>
@@ -60,7 +60,7 @@ export const Stats = () => {
               Jours-Homme
             </p>
             <p className="text-4xl font-bold text-deep-purple-accent-400 sm:text-2xl text-blue mt-4">
-            <CountUp end={86} duration={3} separator=" " />
+            <CountUp end={86} duration={10} separator=" " />
             {''} K
             </p>
           </div> 
@@ -69,7 +69,7 @@ export const Stats = () => {
               Expertise
             </p>
             <p className="text-4xl font-bold text-deep-purple-accent-400 sm:text-2xl text-blue mt-4">
-            <CountUp end={19 } duration={3} separator=" " />
+            <CountUp end={19 } duration={10} separator=" " />
             {''} ans
             </p>
           </div>
