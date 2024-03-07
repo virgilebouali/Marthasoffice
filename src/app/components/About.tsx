@@ -83,7 +83,7 @@ export const About = () => {
                 <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8 mt-4 -z-10">
                     <div className="max-w-xl space-y-3">
                         <h3 className="text-blue text-3xl font-semibold sm:text-4xl -z-10">
-                           6 Services de Directeur Administratif et Financier
+                           6 Services de DAF
                         </h3>
                         <p className="text-white">
                         </p>
