@@ -14,11 +14,10 @@ export const Footer = () => {
                 <div className="flex flex-col">
                     <div className="lg:flex hidden mt-24 mb-12 flex-row justify-between">
                         <div className="">
-                          <h3 className="text-2xl text-white font-bold">Martha's Office</h3> 
+                          <h3 className="text-4xl text-white font-bold">Martha's Office</h3> 
                         </div>
                         <Link href="" className=" md:block cursor-pointer text-white hover:text-pink uppercase font-bold">Services</Link>
                         <Link href=""  className=" md:block cursor-pointer text-white hover:text-pink  uppercase font-bold">Devenir Partenaire</Link>
-                        <Link href=""  className=" md:block cursor-pointer text-white hover:text-pink  uppercase font-bold">Contact</Link>
                         <div className="flex flex-row space-x-8 items-center justify-between">
                            
                             <Link href="" className="hover:scale-125" >

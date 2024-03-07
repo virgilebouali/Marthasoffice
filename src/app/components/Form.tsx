@@ -45,7 +45,7 @@ export const Form = () => {
   return (
     <div>
       <section
-        className="h-fit rounded-3xl mb-6 lg:mx-56 shadow-2xl  overflow-hidden "
+        className="h-fit  mb-6   overflow-hidden "
         style={{
           backgroundImage: `url("/bg2.png")`,
           backgroundSize: "cover",

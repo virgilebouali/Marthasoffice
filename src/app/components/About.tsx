@@ -11,7 +11,8 @@ export const About = () => {
                     </svg>,
                 title: "Finance & Comptabilité",
                 desc: "Mon approche personnalisée assure la stabilité financière de votre entreprise avec la gestion comptable, l'analyse financière et la prévision budgétaire.",
-                href: "#"
+                href: "#",
+                className: "bg-blue"
             },
             {
                 icon:
@@ -74,18 +75,14 @@ export const About = () => {
   }, []);
     
         return (
-            <section className="py-8 -z-40 mt-12 mb-12 rounded-3xl shadow-inner sm:bg-blue"
-            style={{
-                backgroundImage: `url("/bgabout2.png")`,
-                backgroundSize: 'cover',
-          
-                  }}
+            <section className="py-8 -z-40 mt-12 mb-12 shadow-inner bg-gray-200"
+            
                   id="services">
                 
                 <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8 mt-4 -z-50">
                     <div className="max-w-xl space-y-3">
-                        <h3 className="text-white text-3xl font-semibold sm:text-4xl">
-                            Service de Directeur Administratif et Financier
+                        <h3 className="text-blue text-3xl font-semibold sm:text-4xl">
+                           6 Services de Directeur Administratif et Financier
                         </h3>
                         <p className="text-white">
                         </p>
@@ -99,10 +96,10 @@ export const About = () => {
                                             {item.icon}
                                         </div>
                                         <div className="space-y-3">
-                                            <h4 className="text-lg text-white font-semibold">
+                                            <h4 className="text-lg text-blue font-semibold">
                                                 {item.title}
                                             </h4>
-                                            <p className="text-white">
+                                            <p className="text-blue">
                                                 {item.desc}
                                             </p>
                                             

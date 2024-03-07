@@ -69,16 +69,6 @@ export default function Home() {
             )}
           </InView>
           <BackToTopButton />
-          <hr className="border-red mx-24" />
-          <InView triggerOnce>
-            {({ inView, ref }) => (
-              <div ref={ref} className={` ${inView ? 'animate__animated animate__fadeIn animate__delay-1s -z-40' : ''}`}>
-                <Stats />
-              </div>
-            )}
-          </InView>
-
-          <hr className="border-blue mx-24" />
           <InView triggerOnce>
             {({ inView, ref }) => (
               <div ref={ref} className={`z-0 animate__animated animate__fadeIn animate__delay-1s  ${inView ? 'animate__animated animate__fadeIn animate__delay-1s -z-40 ' : ''}`}>
@@ -86,7 +76,14 @@ export default function Home() {
               </div>
             )}
           </InView>
-          <hr className="border-red mx-24" />
+          <InView triggerOnce>
+            {({ inView, ref }) => (
+              <div ref={ref} className={` ${inView ? 'animate__animated animate__fadeIn animate__delay-1s -z-40' : ''}`}>
+                <Stats />
+              </div>
+            )}
+          </InView>
+         
           <InView triggerOnce>
             {({ inView, ref }) => (
               <div ref={ref} className={`z-0 animate__animated animate__fadeIn animate__delay-1s  ${inView ? 'animate__animated animate__fadeIn animate__delay-1s -z-40' : ''}`}>
@@ -94,7 +91,6 @@ export default function Home() {
               </div>
             )}
           </InView>
-          <hr className="border-blue mx-24" />
           <InView triggerOnce>
             {({ inView, ref }) => (
               <div ref={ref} className={`z-0 animate__animated animate__fadeIn animate__delay-1s  ${inView ? 'animate__animated animate__fadeIn animate__delay-1s -z-40' : ''}`}>

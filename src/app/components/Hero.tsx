@@ -8,7 +8,7 @@ export const Hero = () => {
     <div className="lg:block sm:block md:block  lg:w-full sm:w-fit w-auto ease-in">
 		<NavbarDesktop />
 <section
-        className="bg-cover bg-center relative text-black w-full sm:rounded-3xl lg:mt-6"
+        className="bg-cover bg-center relative text-black w-full"
         style={{
 			backgroundImage: `url("/bg2.png")`,
 			backgroundSize: 'cover',
