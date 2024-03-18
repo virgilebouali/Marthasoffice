@@ -5,55 +5,33 @@ import { ServicesIntro } from "./servicesIntro";
 export function TypewriterEffectDemo() {
     const words = [
         {
-          text: "MarthasOffice ",
-        },
-        {
-          text: "sécurise ",
-        },
-        {
-          text: "votre ",
-        },
-        {
-          text: "gestion",
-        },
-        {
-          text: "administrative,",
-        },
-        {
-          text: "financière ",
-        },
-        {
-          text: "et",
-        },
-        {
-          text: "accompagne ",
-        },
-        {
-          text: "votre ",
-        },
-        {
-          text: "stratégie",
-        },
-        {
-          text: "Votre",
-        },
-        {
-          text: "écosystème",
-        },
-        {
-          text: "entrepreneurial",
+          text: "Martha's Office ",
         },
         {
           text: "est",
         },
         {
-          text: "notre",
+          text: "votre ",
         },
         {
-          text: "priorité",
+          text: "nouveau",
         },
-       
-        
+        {
+          text: "Directeur",
+        },
+        {
+          text: "Administratif ",
+        },
+        {
+          text: "et",
+        },
+        {
+          text: "Financier  ",
+        },
+        {
+          text: "externalisé ",
+        },
+  
       ];
       
   return (
@@ -64,7 +42,7 @@ export function TypewriterEffectDemo() {
 
     }}>
       <p className="text-white  text-2xl  mb-10">
-      Vous êtes dirigeant d’une start up ou PME en pleine croissance ?
+      Vous êtes dirigeant d’une entreprise ?
       </p>
       <div className="h-[400px] lg:w-[700px] sm:w-[300px] text-4xl mb-6">
         
