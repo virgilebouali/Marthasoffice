@@ -41,7 +41,7 @@ export function TypewriterEffectDemo() {
         backgroundSize: 'cover',
 
     }}>
-      <p className="text-white  text-2xl  font-bold mb-56">
+      <p className="text-white  text-2xl  font-bold mb-24">
       Dirigeant d’une entreprise ?
       </p>
       <div className="h-[200px] lg:w-[700px] sm:w-[300px] text-2xl mb-6">
