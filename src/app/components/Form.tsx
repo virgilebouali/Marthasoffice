@@ -229,8 +229,7 @@ export const Form = () => {
                   </svg>
 
                   <span className="mx-2 text-white truncate w-72 dark:text-gray-400">
-                    acb@example.com
-                  </span>
+contact@marthas-office.com                  </span>
                 </p>
               </div>
             </div>

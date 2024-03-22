@@ -1,6 +1,7 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
-
+import Link from 'next/link';
+import { Button } from '../../../@/components/ui/button';
 export const About = () => {
 
         const features = [
@@ -96,9 +97,9 @@ export const About = () => {
                                             {item.icon}
                                         </div>
                                         <div className="space-y-3">
-                                            <h4 className="text-lg text-blue font-semibold">
+                                            <Link className="text-lg text-blue font-semibold " href="#contact">
                                                 {item.title}
-                                            </h4>
+                                            </Link>
                                             <p className="text-blue">
                                                 {item.desc}
                                             </p>
@@ -108,9 +109,15 @@ export const About = () => {
                                 ))
                             }
                         </ul>
+                        <Link href="#contact"> <Button className=" bg-orange text-white p-3 items-center justify-center mt-4 ml-32 lg:hidden" >
+                    Contactez moi
+                    </Button></Link>	
                     </div>
+                   
                 </div>
+               
             </section>
+            
         )
     }
   
