@@ -44,7 +44,7 @@ export function TypewriterEffectDemo() {
       <p className="text-white  text-2xl  font-bold mb-56">
       Dirigeant d’une entreprise ?
       </p>
-      <div className="h-[400px] lg:w-[700px] sm:w-[300px] text-4xl mb-6">
+      <div className="h-[200px] lg:w-[700px] sm:w-[300px] text-2xl mb-6">
         
       <TypewriterEffect words={words} />
       </div>

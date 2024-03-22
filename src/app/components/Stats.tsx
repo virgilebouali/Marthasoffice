@@ -9,7 +9,7 @@ export const Stats = () => {
     >
     <div className="grid row-gap-8 lg:grid-cols-5">
       <div className="grid lg:col-span-2 divide-y-1">
-        <div className="bg-blue w-fit p-6 rounded-t-xl">
+        <div className="bg-blue w-fit p-6 mb-2">
           <p className="mb-2 text-2xl font-bold text-white bg-blue">Mes résultats</p>
           <p className="text-white">
             An old man lived in the village. He was one of the most
@@ -17,7 +17,7 @@ export const Stats = () => {
             him, he was always gloomy, he constantly complained.
           </p>
         </div>
-        <div className="bg-red w-full h-full lg:rounded-b-xl p-6">
+        <div className="bg-red w-full h-full mb-2 p-6">
           <p className="mb-2 text-2xl font-bold text-white mt-4 ">Pourquoi ça marche ?</p>
           <p className="text-white">
             People have been coming to the wise man, complaining about the
