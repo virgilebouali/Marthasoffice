@@ -86,6 +86,7 @@ export const About = () => {
                            6 Services de DAF
                         </h3>
                         <p className="text-white">
+                            Directeur Administratif et Financier
                         </p>
                     </div>
                     <div className="mt-12">
