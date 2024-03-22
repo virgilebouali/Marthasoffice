@@ -86,7 +86,7 @@ export default function Home() {
          
           <InView triggerOnce>
             {({ inView, ref }) => (
-              <div ref={ref} className={` animate__animated animate__fadeIn animate__delay-1s  ${inView ? 'animate__animated animate__fadeIn animate__delay-1s -z-40' : ''}`}>
+              <div ref={ref} className={` animate__animated animate__fadeIn animate__delay-1s hidden  ${inView ? 'animate__animated animate__fadeIn animate__delay-1s -z-40' : ''}`}>
                 <Cta />
               </div>
             )}
