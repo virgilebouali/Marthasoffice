@@ -26,7 +26,7 @@ export const Stats = () => {
           </p>
         </div>
       </div>
-      <div className="flex border divide-y rounded-xl lg:col-span-2 sm:grid-cols-2 sm:divide-y-0 sm:divide-x shadow-lg lg:w-[800px] bg-gray-100">
+      <div className="flex border divide-y rounded-xl lg:col-span-2 sm:grid-cols-2 sm:divide-y-0 sm:divide-x shadow-lg lg:w-[800px] bg-gray-200 my-2">
         <div className="flex flex-col justify-around p-6 text-blue gap-y-4">
           <div>
             <p className="text-2xl font-semibold text-red">
@@ -71,6 +71,14 @@ export const Stats = () => {
         </div>
       </div>
     </div>
+    <div className="bg-orange w-full h-full mb-2 p-6 mt-2">
+          <p className="mb-2 text-2xl font-bold text-white mt-4 ">A propos de Martha's Office</p>
+          <p className="text-white">
+            People have been coming to the wise man, complaining about the
+            same problems every time. One day he told them a joke and everyone
+            roared in laughter.
+          </p>
+        </div>
   </div></div>
   )
 }

@@ -56,23 +56,12 @@ export const Form = () => {
           <div className="block items-center lg:-mx-10 lg:flex">
             <div className="lg:w-1/2 lg:mx-10">
               <h3 className="text-2xl font-semibold  capitalize text-white lg:text-3xl">
-                Vous avez une question ?
+              Passez à l’action :
               </h3>
 
               <p className="mt-4 text-white text-lg">
-                Vous avez une question ou une demande de renseignements ?
-                <br></br>N'hésitez pas à me contacter en remplissant le formulaire
-                ci-dessous.
+              Rencontrons nous et ensemble poursuivons votre développement professionnel. 
               </p>
-              <div className="text-white mt-2">
-                <ul>
-                  <li>- Un Point telephonique rapide (5 à 15 min)</li>
-                  <li>- ⁠Un Entretien pour devis (30 min)</li>
-                  <li>
-                    - ⁠Plus d’information sur nos services (Emails / WhatsApp){" "}
-                  </li>
-                </ul>
-              </div>
               <form
                 className="mt-12"
                 onSubmit={handleSubmit}

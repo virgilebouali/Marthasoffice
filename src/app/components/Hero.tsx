@@ -32,7 +32,7 @@ export const Hero = () => {
 			<h2 className=" sm:text-4xl md:text-4xl font-bold leadi mt-4">
 				<span className="text-white text-4xl w-fit">Mon travail est de simplifier le votre.</span>
 			</h2>
-			<p className="mt-6 mb-8 text-lg sm:mb-12 text-white">Un apport & une expertise plurifonctionnelles pour vous libérer de vos tâches administratves et vous permettre de faire croitre votre business en toute confiance.
+			<p className="mt-6 mb-8 text-2xl sm:mb-12 text-white">Un apport & une expertise plurifonctionnelles pour vous libérer de vos tâches administratves et vous permettre de faire croitre votre business en toute confiance.
 			
 			</p>
 			<div className="hidden flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
