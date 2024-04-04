@@ -5,7 +5,7 @@ import CountUp from 'react-countup';
 
 export const Stats = () => {
   return (
-    <div> <div className=" py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20  rounded-xl -z-50 "
+    <div> <div className=" py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8  rounded-xl -z-50 "
     >
     <div className="grid row-gap-8 lg:grid-cols-5">
       <div className="grid lg:col-span-2 divide-y-1">
@@ -26,7 +26,7 @@ export const Stats = () => {
           </p>
         </div>
       </div>
-      <div className="flex border divide-y rounded-xl lg:col-span-2 sm:grid-cols-2 sm:divide-y-0 sm:divide-x shadow-lg lg:w-[800px] bg-gray-200 my-2">
+      <div className="flex border divide-y lg:col-span-2 sm:grid-cols-2 sm:divide-y-0 sm:divide-x shadow-lg lg:w-[800px] bg-gray-200 my-2">
         <div className="flex flex-col justify-around p-6 text-blue gap-y-4">
           <div>
             <p className="text-2xl font-semibold text-red">
@@ -70,15 +70,19 @@ export const Stats = () => {
 
         </div>
       </div>
+      
     </div>
-    <div className="bg-orange w-full h-full mb-2 p-6 mt-2">
+    
+  </div>
+  <div className="bg-orange w-full h-full mb-2 p-6 mt-2 hidden">
           <p className="mb-2 text-2xl font-bold text-white mt-4 ">A propos de Martha's Office</p>
           <p className="text-white">
-            People have been coming to the wise man, complaining about the
-            same problems every time. One day he told them a joke and everyone
-            roared in laughter.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi aliquam, assumenda error exercitationem ipsam ipsa perspiciatis aliquid sint ex ducimus, quia voluptate illum ad quibusdam modi nisi placeat dolorem earum.
+            Tenetur inventore hic sint voluptates possimus? Voluptates possimus quidem ipsam asperiores! Recusandae dolor est cum aliquam, fuga voluptas dicta ab suscipit, eos sed repellat nam enim qui ad aspernatur ipsum.
+            Consequatur enim laborum rem, similique quasi tenetur error eligendi non dolores numquam sunt magnam distinctio minima dolorem alias officia! Assumenda, vitae excepturi soluta deserunt saepe natus id dolor nulla iusto?
+            Dolore illum id minima deserunt iusto ipsam aperiam, assumenda porro tenetur numquam veniam. Consectetur error consequuntur explicabo totam rerum fugiat amet, ipsam sapiente tempore iste ad quia quidem sunt officia.
+            Quibusdam architecto placeat aut voluptatum modi optio enim quis distinctio ea facere recusandae deleniti nisi, rerum sint vero autem quisquam sapiente a dolore molestiae magni. Debitis quas placeat temporibus quis.
           </p>
-        </div>
-  </div></div>
+        </div></div>
   )
 }
