@@ -65,6 +65,7 @@ export const Form = () => {
               <form
                 className="mt-12"
                 action="https://formsubmit.co/contact@marthas-office.com"
+                method="POST"
 
               >
                 <div className="-mx-2 md:items-center md:flex">
