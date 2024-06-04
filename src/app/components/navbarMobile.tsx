@@ -28,12 +28,12 @@ export const NavbarMobile = () => {
                       </Link>
                     </li>
                     <li className="block p-1 text-blue-gray-900">
-                      <Link href="#cta" className="flex items-center hover:text-blue-600 hover:shadow-xl">
+                      <Link href="#contact" className="flex items-center hover:text-blue-600 hover:shadow-xl">
                         Devenir partenaire
                       </Link>
                     </li>
                     <li className="block p-1 text-blue-gray-900">
-                      <Link href="#" className="flex items-center hover:text-blue-600 hover:shadow-xl">
+                      <Link href="#contact" className="flex items-center hover:text-blue-600 hover:shadow-xl">
                         Me contacter
                       </Link>
                     </li>
@@ -70,7 +70,7 @@ export const NavbarMobile = () => {
         </Link>
       </li>
       <li className="block p-2 text-blue-gray-900">
-        <Link href="#cta" className="flex items-center">
+        <Link href="#contact" className="flex items-center">
           Devenir partenaire
         </Link>
       </li>
@@ -82,7 +82,7 @@ export const NavbarMobile = () => {
 
       <div className="flex flex-row space-x-4 items-center">
                            
-                           <Link href="" className="hover:scale-125" >
+                           <Link href="" className="hover:scale-125 hidden" >
                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"  width="50" height="50" viewBox="0 0 48 48">
 <path fill="#f55376" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20 c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20 C42.014,38.383,38.417,41.986,34.017,41.99z"></path><path fill="#fac8d5" d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5 s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z"></path><circle cx="31.5" cy="16.5" r="1.5" fill="#fac8d5"></circle><path fill="#fac8d5" d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12 C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18 z"></path>
 </svg>

@@ -20,20 +20,20 @@ export function InfiniteMovingCardsDemo() {
 const testimonials = [
   {
     quote:
-      "Le client exprime clairement son besoin d'assistance. Nous devrions mettre en place des actions immédiates pour répondre à ses attentes.",
-    name: "Charles",
-    title: "J’ai besoin qu’on s’occupe de ça.",
+      "Beaucoup de drive, de précisions, et de livraisons, Nous sommes défendus et protègés avec courage devant la charge de travail et face aux situations litigieuses…",
+    name: "Directeur, Multinationale 1Mrds ",
+    title: "« Can do attitude »",
   },
   {
     quote:
-      "Le collaborateur souligne l'importance de se concentrer sur les aspects commerciaux. Nous devrions soutenir cette initiative en allouant les ressources nécessaires pour renforcer nos activités commerciales.",
-    name: "Helène",
-    title: "Je dois me focaliser sur le commercial.",
+      "You literally changed my life, by changing my perception of administration, process and controlling… My pricing and offers are now aligned with my back to end business. Looking forward to our next project",
+    name: "Global TV anchelor and Startup Funder",
+    title: "Martha’s Office literally change my life",
   },
   {
-    quote: "Le client reconnaît l'impact positif de notre collaboration sur la valeur de ses services. Cela souligne l'importance d'un soutien continu pour maintenir et améliorer cette valeur perçue.",
-    name: "Edgar",
-    title: "With your help, I set a good value to my services.",
+    quote: "Je me sentais tiraillée par quatre ans de retard administratif et financier, à un moment de tournant dans le développement de mon entreprise. Mon rôle est d’être la RP de mon entreprise, le moteur de création.",
+    name: "Directrice et Fondatrice, secteur Médico-Social, C.A. 2,5 millions d’euros",
+    title: "J’ai besoin d’un bras droit qui s’assure du reste. Et c’est ce que j’ai enfin trouvé.",
   },
   
 ];

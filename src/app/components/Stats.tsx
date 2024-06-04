@@ -12,17 +12,12 @@ export const Stats = () => {
         <div className="bg-blue w-fit p-6 mb-2">
           <p className="mb-2 text-2xl font-bold text-white bg-blue">Mes résultats</p>
           <p className="text-white">
-            An old man lived in the village. He was one of the most
-            unfortunate people in the world. The whole village was tired of
-            him, he was always gloomy, he constantly complained.
-          </p>
+          Nos services, alliant expertise et approche humaine, ont permis la création de startups pérennes, la croissance dans des environnements concurrentiels, le redressement des prix et de la rentabilité, la relocalisation de projets, et la résolution de litiges administratifs, RH et financiers.</p>
         </div>
         <div className="bg-red w-full h-full mb-2 p-6">
           <p className="mb-2 text-2xl font-bold text-white mt-4 ">Pourquoi ça marche ?</p>
           <p className="text-white">
-            People have been coming to the wise man, complaining about the
-            same problems every time. One day he told them a joke and everyone
-            roared in laughter.
+          Nous automatisons et planifions stratégiquement tout en offrant une protection juridique solide. Nos projets couvrent cabinets médicaux, sociétés de services, joint-ventures financières, BTP, négoce, BtoC alimentaire, et coaching bien-être.
           </p>
         </div>
       </div>
