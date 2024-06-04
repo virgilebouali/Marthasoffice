@@ -62,12 +62,8 @@ export const Form = () => {
               <p className="mt-4 text-white text-lg">
               Rencontrons nous et ensemble poursuivons votre développement professionnel. 
               </p>
-              <form
-                className="mt-12"
-                action="https://formsubmit.co/contact@marthas-office.com"
-                method="POST"
+              <form action="https://formsubmit.co/contact@marthas-office.com" method="POST" className="mt-12">
 
-              >
                 <div className="-mx-2 md:items-center md:flex">
                   <div className="flex-1 px-2">
                     <label className="block mb-2 text-sm text-white">
@@ -76,7 +72,7 @@ export const Form = () => {
                     <input
                       type="text"
                       name="name"
-                      placeholder="John Doe"
+                      placeholder="Votre Nom"
                       required
                       className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400text-white rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                     />
@@ -89,7 +85,7 @@ export const Form = () => {
                     <input
                       type="email"
                       name="email"
-                      placeholder="johndoe@example.com"
+                      placeholder="Votre e-mail"
                       required
                       className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400text-white rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                     />
