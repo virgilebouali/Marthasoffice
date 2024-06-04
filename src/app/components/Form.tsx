@@ -64,7 +64,7 @@ export const Form = () => {
               </p>
               <form
                 className="mt-12"
-                onSubmit={handleSubmit}
+                action="https://formsubmit.co/contact@marthas-office.com"
 
               >
                 <div className="-mx-2 md:items-center md:flex">

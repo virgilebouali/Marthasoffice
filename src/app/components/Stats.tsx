@@ -17,7 +17,7 @@ export const Stats = () => {
         <div className="bg-red w-full h-full mb-2 p-6">
           <p className="mb-2 text-2xl font-bold text-white mt-4 ">Pourquoi ça marche ?</p>
           <p className="text-white">
-          Nous automatisons et planifions stratégiquement tout en offrant une protection juridique solide. Nos projets couvrent cabinets médicaux, sociétés de services, joint-ventures financières, BTP, négoce, BtoC alimentaire, et coaching bien-être.
+          Avec mon réseau d’experts techniques, juridiques, comptables et financiers nous automatisons et planifions stratégiquement tout en offrant une protection juridique solide. Nos projets couvrent cabinets médicaux, sociétés de services, joint-ventures financières, BTP, négoce, BtoC alimentaire, et coaching bien-être.
           </p>
         </div>
       </div>
