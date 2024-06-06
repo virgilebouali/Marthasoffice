@@ -11,7 +11,7 @@ interface CustomMetadata extends Metadata {
 export const metadata: CustomMetadata = {
   title: "Martha's Office by Cynthia Cereyon",
   description: "Mon travail est de simplifier le votre. Un apport & une expertise plurifonctionnelles pour vous libérer de vos tâches administratives",
-  canonical: "https://www.votresite.com",
+  canonical: "https://www.marthas-office.com/",
 };
 
 interface RootLayoutProps {
