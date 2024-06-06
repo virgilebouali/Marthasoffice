@@ -10,7 +10,7 @@ interface CustomMetadata extends Metadata {
 
 export const metadata: CustomMetadata = {
   title: "Martha's Office by Cynthia Cereyon",
-  description: "Mon travail est de simplifier le votre. Un apport & une expertise plurifonctionnelles pour vous libérer de vos tâches administratives et vous permettre de faire croître votre business en toute confiance.",
+  description: "Mon travail est de simplifier le votre. Un apport & une expertise plurifonctionnelles pour vous libérer de vos tâches administratives",
   canonical: "https://www.votresite.com",
 };
 
@@ -27,7 +27,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content={String(description ?? '')} />
-        <meta name="keywords" content="Martha's Office, Cynthia Cereyon, gestion administrative, expertise plurifonctionnelle, simplifier votre travail" />
+        <meta name="keywords" content="Martha's Office, Cynthia Cereyon, gestion administrative, expertise, directeur, administratif, financier" />
         <meta name="author" content="Cynthia Cereyon" />
         <meta property="og:title" content={String(title ?? '')} />
         <meta property="og:description" content={String(description ?? '')} />
