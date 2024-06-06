@@ -22,10 +22,11 @@ export const Hero = () => {
       width={500}
       height={500}
       alt="Cynthia Cereyon"
+	  title="Cynthia Cereyon"
       className="rounded-full border-2-b  shadow-xl  lg:mr-12 mt-6"
     />		</div>
 		<div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left lg:-mt-12">
-		   <h3 className="mb-4 text-2xl mt-8 text-white" >Directeur Administratif et Financier <span> </span>  </h3>
+		   <h2 className="mb-4 text-2xl mt-8 text-white" >Directeur Administratif et Financier <span> </span>  </h2>
 			<h1 className="text-7xl font-bold text-white">
 				Cynthia Cereyon
 			</h1>

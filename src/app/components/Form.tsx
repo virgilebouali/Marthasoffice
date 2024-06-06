@@ -4,43 +4,46 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Toaster, toast } from "sonner";
-import { Toast } from "../../../@/components/ui/toast";
+import { useRouter } from "next/navigation";
 
 
 
 
 export const Form = () => {
-  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
-  const [isPending, setIsPending] = useState(false);
+  const router = useRouter();
+  const handleSubmit = async (event: any) => {
+  event.preventDefault();
+  const formData = new FormData(event.target);
 
-  async function handleSubmit(event: any) {
+  try {
+    const response = await fetch('https://formsubmit.co/c88118e01be4e5bcc51a0cb19be4a3af', {
+      method: 'POST',
+      body: formData,
+    });
 
-    event.preventDefault();
-    const formData = new FormData(event.target)
-    try {
-
-        const response = await fetch('/api/contact', {
-            method: 'post',
-            body: formData,
-        });
-
-        console.log(formData)
-        if (!response.ok) {
-            console.log("falling over")
-            throw new Error(`response status: ${response.status}`);
-        }
-        const responseData = await response.json();
-        console.log(responseData['message'])
-
-        toast.success('Message envoyé ! Nous vous recontacterons dans les plus brefs délais. Merci !')
-      } catch (err) {
-        console.error(err);
-        toast.error('Oups, quelque chose ne va pas. Veuillez réessayer.')
+    if (!response.ok) {
+      throw new Error(`response status: ${response.status}`);
     }
 
-  
+    // Extraire les valeurs du formulaire
+    const name = formData.get('name');
+    const email = formData.get('email');
+    const telephone = formData.get('telephone');
+    const message = formData.get('message');
 
-  };
+    console.log(name, email, telephone, message);
+
+    // Redirection vers la page de confirmation après l'envoi réussi du formulaire
+    toast.success('Message envoyé ! Nous vous recontacterons dans les plus brefs délais. Merci !');
+    router.push('/confirmation');
+  } catch (err) {
+    console.error(err);
+    // Gérer les erreurs d'envoi du formulaire
+    toast.error('Une erreur est survenue. Veuillez réessayer.');
+  }
+};
+
+
 
   return (
     <div>
@@ -62,7 +65,7 @@ export const Form = () => {
               <p className="mt-4 text-white text-lg">
               Rencontrons nous et ensemble poursuivons votre développement professionnel. 
               </p>
-              <form action="https://formsubmit.co/c88118e01be4e5bcc51a0cb19be4a3af" method="POST" className="mt-12">
+              <form action="https://formsubmit.co/c88118e01be4e5bcc51a0cb19be4a3af" method="POST" className="mt-12" onSubmit={handleSubmit}>
 
                 <div className="-mx-2 md:items-center md:flex">
                   <div className="flex-1 px-2">
@@ -122,20 +125,11 @@ export const Form = () => {
                   className="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group mt-6 "
                   
                 >
-                  {isPending ? (
-                    // Afficher un loader pendant la soumission.
-                    <div
-                      className=" inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
-                      role="status"
-                    >
-                      <span className="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white"></span>
-                    </div>
-                  ) : (
-                    // Afficher le texte "Envoyer" quand il n'y a pas de soumission en cours.
+                  
                     <span className="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-red">
                       Envoyer
                     </span>
-                  )}
+                 
                 </button>
               </form>
             </div>
@@ -147,7 +141,8 @@ export const Form = () => {
                 src="/corpo2.jpg"
                 width={500}
                 height={500}
-                alt=""
+                alt="form-image"
+                title="form-img"
               />
 
               <div className="mt-6 space-y-8 md:mt-8">
