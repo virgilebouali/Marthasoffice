@@ -27,12 +27,12 @@ export const NavbarDesktop = () => {
                 
                   <ul className="flex flex-col  gap-2 mt-2 mb-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 text-center justify-evenly">
                     <li className="block  text-blue-gray-900 hover:border-blue hover:border-b-2">
-                      <Link href="marthas-office.com/#services" className="flex items-center hover:shadow-blue-100  hover:text-red p-2 rounded-xl" >
+                      <Link href="/#services" className="flex items-center hover:shadow-blue-100  hover:text-red p-2 rounded-xl" >
                         Services
                       </Link>
                     </li>
                     <li className="block  text-blue-gray-900 hover:border-blue hover:border-b-2">
-                      <Link href="marthas-office.com/#contact" className="flex items-center   hover:shadow-blue-100 hover:text-red p-2 rounded-xl hover:text">
+                      <Link href="/#contact" className="flex items-center   hover:shadow-blue-100 hover:text-red p-2 rounded-xl hover:text">
                         Devenir partenaire
                       </Link>
                     </li>

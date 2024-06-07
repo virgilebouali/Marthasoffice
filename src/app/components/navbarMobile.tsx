@@ -23,7 +23,7 @@ export const NavbarMobile = () => {
                 <div className="hidden mr-4 lg:block">
                   <ul className="flex flex-col gap-2 mt-2 mb-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
                     <li className="block p-1 text-blue-gray-900">
-                      <Link href="marthas-office.com/#services" className="flex items-center hover:text-blue-600 hover:shadow-xl">
+                      <Link href="/#services" className="flex items-center hover:text-blue-600 hover:shadow-xl">
                         Solutions
                       </Link>
                     </li>
@@ -60,12 +60,12 @@ export const NavbarMobile = () => {
     <div className="z-50">
     <ul className="flex flex-col gap-4">
       <li className="block p-2 text-blue-gray-900">
-        <Link href="marthas-office.com/#services" className="flex items-center">
+        <Link href="/#services" className="flex items-center">
           Services
         </Link>
       </li>
       <li className="block p-2 text-blue-gray-900">
-        <Link href="marthas-office.com/#contact" className="flex items-center">
+        <Link href="/#contact" className="flex items-center">
           Devenir partenaire
         </Link>
       </li>
