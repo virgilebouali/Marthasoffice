@@ -10,38 +10,6 @@ import { useRouter } from "next/navigation";
 
 
 export const Form = () => {
-  const router = useRouter();
-  const handleSubmit = async (event: any) => {
-  event.preventDefault();
-  const formData = new FormData(event.target);
-
-  try {
-    const response = await fetch('https://formsubmit.co/c88118e01be4e5bcc51a0cb19be4a3af', {
-      method: 'POST',
-      body: formData,
-    });
-
-    if (!response.ok) {
-      throw new Error(`response status: ${response.status}`);
-    }
-
-    // Extraire les valeurs du formulaire
-    const name = formData.get('name');
-    const email = formData.get('email');
-    const telephone = formData.get('telephone');
-    const message = formData.get('message');
-
-    console.log(name, email, telephone, message);
-
-    // Redirection vers la page de confirmation après l'envoi réussi du formulaire
-    toast.success('Message envoyé ! Nous vous recontacterons dans les plus brefs délais. Merci !');
-    router.push('/confirmation');
-  } catch (err) {
-    console.error(err);
-    // Gérer les erreurs d'envoi du formulaire
-    toast.error('Une erreur est survenue. Veuillez réessayer.');
-  }
-};
 
 
 
@@ -65,7 +33,7 @@ export const Form = () => {
               <p className="mt-4 text-white text-lg">
               Rencontrons nous et ensemble poursuivons votre développement professionnel. 
               </p>
-              <form action="https://formsubmit.co/c88118e01be4e5bcc51a0cb19be4a3af" method="POST" className="mt-12">
+              <form action="https://formsubmit.co/contact@marthas-office.com" method="POST" className="mt-12">
 
                 <div className="-mx-2 md:items-center md:flex">
                   <div className="flex-1 px-2">
