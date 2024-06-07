@@ -12,29 +12,24 @@ export const NavbarMobile = () => {
   };
 
   return (
-    <div className=" bg-white">
+    <div className=" bg-white lg:hidden">
       <div className=" flex place-items-right overflow-x-scroll lg:overflow-visible">
         <div className=" z-50">
           <nav className="w-screen justify-between top-0 z-50 block px-4 py-2 border rounded-none shadow-md botext-blue-500/80 bg-white  lg:px-8 lg:py-4">
             <div className="flex items-right justify-between text-blue-gray-900 ">
             <Image src="/icons8-poupée-russe-96.png" width={40} height={40}  alt="" />
-              <h3 className="font-bold text-red flex justify-between text-2xl gap-2">Martha's  <span className="text-blue ">     Office </span></h3>
+              <h1 className="font-bold text-red flex justify-between text-2xl gap-2">Martha's  <span className="text-blue ">     Office </span></h1>
               <div className="flex items-center gap-4 border-t-2">
                 <div className="hidden mr-4 lg:block">
                   <ul className="flex flex-col gap-2 mt-2 mb-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
                     <li className="block p-1 text-blue-gray-900">
-                      <Link href="#services" className="flex items-center hover:text-blue-600 hover:shadow-xl">
+                      <Link href="marthas-office.com/#services" className="flex items-center hover:text-blue-600 hover:shadow-xl">
                         Solutions
                       </Link>
                     </li>
                     <li className="block p-1 text-blue-gray-900">
                       <Link href="#contact" className="flex items-center hover:text-blue-600 hover:shadow-xl">
                         Devenir partenaire
-                      </Link>
-                    </li>
-                    <li className="block p-1 text-blue-gray-900">
-                      <Link href="#contact" className="flex items-center hover:text-blue-600 hover:shadow-xl">
-                        Me contacter
                       </Link>
                     </li>
                     <li className="block p-1 text-blue-gray-900">
@@ -65,18 +60,13 @@ export const NavbarMobile = () => {
     <div className="z-50">
     <ul className="flex flex-col gap-4">
       <li className="block p-2 text-blue-gray-900">
-        <Link href="#services" className="flex items-center">
+        <Link href="marthas-office.com/#services" className="flex items-center">
           Services
         </Link>
       </li>
       <li className="block p-2 text-blue-gray-900">
-        <Link href="#contact" className="flex items-center">
+        <Link href="marthas-office.com/#contact" className="flex items-center">
           Devenir partenaire
-        </Link>
-      </li>
-      <li className="block p-2 text-blue-gray-900">
-        <Link href="#form" className="flex items-center">
-          Me contacter
         </Link>
       </li>
 

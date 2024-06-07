@@ -42,8 +42,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <link rel="canonical" href={String(canonical ?? '')} />
         <title>{String(title ?? '')}</title>
       </head>
-      <body className={poppins.className}>
-        <div className="shadow-2xl shadow-white bg-pink">{children}</div>
+      <body className={poppins.className} >
+        <div className="shadow-2xl shadow-white bg-gray-100" >{children}</div>
       </body>
     </html>
   );

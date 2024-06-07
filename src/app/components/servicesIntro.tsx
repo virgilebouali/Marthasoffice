@@ -26,7 +26,7 @@ export function ServicesIntro() {
       ];
       
   return (
-    <div className="flex items-center justify-center w-full flex-col col-span-2">
+    <div className="flex items-center justify-center w-full flex-col col-span-2 mx-auto-6">
       <div className="add-space-between-words hidden lg:block">
         <TypewriterEffect words={words} />
       </div>

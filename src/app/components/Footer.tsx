@@ -14,7 +14,8 @@ export const Footer = () => {
                 <div className="flex flex-col">
                     <div className="lg:flex hidden mt-24 mb-12 flex-row justify-between">
                         <div className="">
-                          <h3 className="text-4xl text-white font-bold">Martha's Office</h3> 
+                          <h3 className="text-4xl text-white font-bold">Martha's Office</h3>
+                          <p>by Cynthia Cereyon</p>
                         </div>
                         <Link href="" className=" md:block cursor-pointer text-white hover:text-pink uppercase font-bold">Services</Link>
                         <Link href=""  className=" md:block cursor-pointer text-white hover:text-pink  uppercase font-bold">Devenir Partenaire</Link>

@@ -19,6 +19,7 @@ import { InfiniteMovingCardsDemo } from "./components/testimonialanimation";
 import BackToTopButton from "./components/backToTop";
 import { useRouter } from 'next/navigation';
 import { Toaster, toast } from 'sonner'
+import BlogPosts from "./components/BlogPosts";
 
 
 export default function Home() {
@@ -91,6 +92,7 @@ export default function Home() {
               </div>
             )}
           </InView>
+          <BlogPosts />
           <InView triggerOnce>
             {({ inView, ref }) => (
               <div ref={ref} className={` animate__animated animate__fadeIn animate__delay-1s  ${inView ? 'animate__animated animate__fadeIn animate__delay-1s -z-40' : ''}`}>
