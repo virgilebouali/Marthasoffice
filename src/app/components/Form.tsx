@@ -31,7 +31,7 @@ export const Form = () => {
               <p className="mt-4 text-white text-lg">
               Rencontrons nous et ensemble poursuivons votre développement professionnel. 
               </p>
-              <form action="https://formsubmit.co/contact@marthas-office.com" method="POST" className="mt-12">
+              <form action="https://formsubmit.co/virgile.bouali@gmail.com" method="POST" className="mt-12">
 
                 <div className="-mx-2 md:items-center md:flex">
                   <div className="flex-1 px-2">
@@ -175,8 +175,9 @@ export const Form = () => {
                     />
                   </svg>
 
-                  <span className="mx-2 text-white truncate w-72 dark:text-gray-400">
-contact@marthas-office.com                  </span>
+                  <a href="mailto:contact@marthas-office.com" className="mx-2 text-white truncate w-72 dark:text-gray-400 hover:text-blue">
+    contact@marthas-office.com
+</a>
                 </p>
               </div>
             </div>

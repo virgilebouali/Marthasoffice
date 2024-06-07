@@ -21,7 +21,7 @@ export const NavbarDesktop = () => {
               <div className="flex items-center gap-4 w-full"> <Link href="/">
               <Image src="/icons8-poupée-russe-96.png" width={40} height={40}  alt="logo" title="logoheader" />
               </Link>
-             <a href="/"><h1 className="font-bold text-red flex justify-between text-2xl gap-2">Martha's  <span className="text-blue ">     Office </span></h1></a> 
+             <a href="/"><h1 className="font-bold text-red flex justify-between text-2xl gap-2">Martha's  <span className="text-blue ">     Office  </span> </h1></a> 
 
                 <div className="hidden mr-4 lg:block w-full text-center items-center ml-36" >
                 
