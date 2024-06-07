@@ -7,8 +7,6 @@ import { Toaster, toast } from "sonner";
 import { useRouter } from "next/navigation";
 
 
-
-
 export const Form = () => {
 
 
@@ -81,6 +79,7 @@ export const Form = () => {
                   </label>
                   <textarea
                     name="message"
+                    
                     required
                     className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400text-white rounded-md md:h-56 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                     placeholder="Message"
@@ -89,7 +88,6 @@ export const Form = () => {
 
                 <button
                   type="submit"
-                  
                   className="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group mt-6 "
                   
                 >
