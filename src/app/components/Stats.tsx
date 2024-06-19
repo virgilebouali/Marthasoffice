@@ -28,7 +28,7 @@ export const Stats = () => {
               P&L
             </p>
             <p className="text-xl font-bold text-deep-purple-accent-400 sm:text-2xl text-blue mt-4">
-            <CountUp end={7000000} duration={10} separator=" " />
+            <CountUp end={21000000} duration={10} separator=" " />
 €
             </p>
           </div>
