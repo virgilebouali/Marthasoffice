@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 export const Footer = () => {
+
   return (
     <div>
     <div className="w-full sm:block md:block lg:flex items-center justify-center animate__animated animate__fadeIn animate__delay-1s "
@@ -17,8 +18,11 @@ export const Footer = () => {
                           <h3 className="text-4xl text-white font-bold">Martha's Office</h3>
                           <p>by Cynthia Cereyon</p>
                         </div>
-                        <Link href="" className=" md:block cursor-pointer text-white hover:text-pink uppercase font-bold">Services</Link>
-                        <Link href=""  className=" md:block cursor-pointer text-white hover:text-pink  uppercase font-bold">Devenir Partenaire</Link>
+                        <Link href="" className=" md:block cursor-pointer text-white hover:text-pink uppercase font-bold">                                      
+
+                        </Link>
+                        <Link href=""  className=" md:block cursor-pointer text-white hover:text-pink  uppercase font-bold">                      
+                        </Link>
                         <div className="flex flex-row space-x-8 items-center justify-between">
                             <Link href="https://www.linkedin.com/in/cynthia-martha-cereyon/?originalSubdomain=fr" className="hover:scale-125">
                             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 48 48">

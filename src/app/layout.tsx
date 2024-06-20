@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import { LanguageProvider } from './LanguageContext';
 
 const poppins = Poppins({ subsets: ["latin"], weight: ['400', '700'] });
 
@@ -42,9 +43,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <link rel="canonical" href={String(canonical ?? '')} />
         <title>{String(title ?? '')}</title>
       </head>
-      <body className={poppins.className} >
-        <div className="shadow-2xl shadow-white bg-gray-100" >{children}</div>
-      </body>
+      <LanguageProvider>
+        <body className={poppins.className}>
+          <div className="shadow-2xl shadow-white bg-gray-100">{children}</div>
+        </body>
+      </LanguageProvider>
+
     </html>
   );
 }

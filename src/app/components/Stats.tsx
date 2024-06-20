@@ -2,22 +2,26 @@
 
 import React from 'react'
 import CountUp from 'react-countup';
-
+import { useLanguage } from '../LanguageContext';
+import LanguageToggle from './ToggleLanguage';
 export const Stats = () => {
+  const { translations } = useLanguage();
+
   return (
     <div> <div className=" py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8  rounded-xl -z-50 "
     >
     <div className="grid row-gap-8 lg:grid-cols-5">
       <div className="grid lg:col-span-2 divide-y-1">
         <div className="bg-blue w-fit p-6 mb-2">
-          <p className="mb-2 text-2xl font-bold text-white bg-blue">Mes résultats</p>
+          <p className="mb-2 text-2xl font-bold text-white bg-blue">{translations.Results}</p>
           <p className="text-white">
-          Nos services, alliant expertise et approche humaine, ont permis la création de startups pérennes, la croissance dans des environnements concurrentiels, le redressement des prix et de la rentabilité, la relocalisation de projets, et la résolution de litiges administratifs, RH et financiers.</p>
+          {translations.Resultsdescription}
+          </p>
         </div>
         <div className="bg-red w-full h-full mb-2 p-6">
-          <p className="mb-2 text-2xl font-bold text-white mt-4 ">Pourquoi ça marche ?</p>
+          <p className="mb-2 text-2xl font-bold text-white mt-4 ">{translations.Why}</p>
           <p className="text-white">
-          Avec mon réseau d’experts techniques, juridiques, comptables et financiers nous automatisons et planifions stratégiquement tout en offrant une protection juridique solide. Nos projets couvrent cabinets médicaux, sociétés de services, joint-ventures financières, BTP, négoce, BtoC alimentaire, et coaching bien-être.
+          {translations.Whydescription}
           </p>
         </div>
       </div>
@@ -34,7 +38,7 @@ export const Stats = () => {
           </div>
           <div>
             <p className="text-2xl font-semibold text-red">
-              Projets
+            {translations.Projets}
             </p>
             <p className="text-xl font-bold text-deep-purple-accent-400 sm:text-2xl text-blue mt-4">
             <CountUp end={38} duration={10} separator=" " />
@@ -46,7 +50,7 @@ export const Stats = () => {
         <div className="flex flex-col justify-around p-6 text-white">
           <div>
             <p className="text-2xl font-semibold text-red ">
-              Jours-Homme
+            {translations.JoursHomme}
             </p>
             <p className="text-xl font-bold text-deep-purple-accent-400 sm:text-2xl text-blue mt-4">
             <CountUp end={86} duration={10} separator=" " />

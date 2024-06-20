@@ -4,8 +4,12 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { X, Menu } from 'lucide-react'; // Assurez-vous que les noms des icônes sont corrects
 import Image from 'next/image';
+import { useLanguage } from '../LanguageContext';
+import LanguageToggle from './ToggleLanguage';
+
 export const NavbarDesktop = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const { translations } = useLanguage();
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
@@ -28,12 +32,12 @@ export const NavbarDesktop = () => {
                   <ul className="flex flex-col  gap-2 mt-2 mb-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 text-center justify-evenly">
                     <li className="block  text-blue-gray-900 hover:border-blue hover:border-b-2">
                       <Link href="/#services" className="flex items-center hover:shadow-blue-100  hover:text-red p-2 rounded-xl" >
-                        Services
+                      {translations.Services}
                       </Link>
                     </li>
                     <li className="block  text-blue-gray-900 hover:border-blue hover:border-b-2">
                       <Link href="/#contact" className="flex items-center   hover:shadow-blue-100 hover:text-red p-2 rounded-xl hover:text">
-                        Devenir partenaire
+                      {translations.Partner}
                       </Link>
                     </li>
                     <div className="flex flex-row space-x-4 items-center justify-between">
@@ -52,7 +56,7 @@ export const NavbarDesktop = () => {
                   </ul>
                   
                 </div>
-
+                <LanguageToggle />
                 <button
                   className="relative ml-auto h-6 max-h-[40px] w-6 max-w-[40px] select-none rounded-lg text-center align-middle font-sans text-xs font-medium uppercase text-inherit transition-all hover:bg-transparent focus:bg-transparent active:bg-transparent disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:hidden"
                   type="button"

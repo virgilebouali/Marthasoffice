@@ -3,6 +3,7 @@ import { NavbarDesktop } from '@/src/app/components/NavbarDesktop'
 import { NavbarMobile } from '@/src/app/components/navbarMobile'
 import React, { useEffect, useState } from "react";
 import Image from 'next/image';
+import { useLanguage } from '../../../LanguageContext';
 
 
 

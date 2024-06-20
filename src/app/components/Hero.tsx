@@ -2,8 +2,11 @@ import React from 'react'
 import Image from 'next/image'
 import  Link  from 'next/link'
 import { NavbarDesktop } from './NavbarDesktop'
-
+import { useLanguage } from '../LanguageContext';
+import LanguageToggle from './ToggleLanguage';
 export const Hero = () => {
+	const { translations } = useLanguage();
+
   return (
     <div className="lg:block sm:block md:block  lg:w-full sm:w-fit w-auto ease-in">
 		<NavbarDesktop />
@@ -26,14 +29,15 @@ export const Hero = () => {
       className="rounded-full border-2-b  shadow-xl  lg:mr-12 mt-6"
     />		</div>
 		<div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left lg:-mt-12">
-		   <h2 className="mb-4 text-2xl mt-8 text-white" >Directeur Administratif et Financier <span> </span>  </h2>
+		   <h2 className="mb-4 text-2xl mt-8 text-white" >                      {translations.FirstTitle}
+		   <span> </span>  </h2>
 			<h2 className="text-7xl font-bold text-white">
 				Cynthia Cereyon
 			</h2>
 			<h2 className=" sm:text-4xl md:text-4xl font-bold leadi mt-4">
-				<span className="text-white text-4xl w-fit">Mon travail est de simplifier le votre.</span>
+				<span className="text-white text-4xl w-fit">  {translations.SecondTitle}</span>
 			</h2>
-			<p className="mt-6 mb-8 text-2xl sm:mb-12 text-white">Un apport & une expertise plurifonctionnelles pour vous libérer de vos tâches administratves et vous permettre de faire croitre votre business en toute confiance.
+			<p className="mt-6 mb-8 text-2xl sm:mb-12 text-white">{translations.description}
 			
 			</p>
 			<div className="hidden flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">

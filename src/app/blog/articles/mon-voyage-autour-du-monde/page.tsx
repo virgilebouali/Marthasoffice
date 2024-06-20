@@ -6,8 +6,8 @@ import Image from 'next/image';
 
 
 
-const article1 = () => {
-   
+const Article1 = () => {
+
   return (
 	<>
 	<NavbarDesktop />
@@ -59,4 +59,4 @@ const article1 = () => {
 )
 }
 
-export default article1
+export default Article1

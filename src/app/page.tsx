@@ -20,6 +20,7 @@ import BackToTopButton from "./components/backToTop";
 import { useRouter } from 'next/navigation';
 import { Toaster, toast } from 'sonner'
 import BlogPosts from "./components/BlogPosts";
+import { LanguageProvider } from "./LanguageContext";
 
 
 export default function Home() {
@@ -92,6 +93,7 @@ export default function Home() {
               </div>
             )}
           </InView>
+          
           <BlogPosts />
           <InView triggerOnce>
             {({ inView, ref }) => (
@@ -106,7 +108,6 @@ export default function Home() {
  <Form />              </div>
             )}
           </InView>
-         
           <Footer  />
         </main>
       </div>

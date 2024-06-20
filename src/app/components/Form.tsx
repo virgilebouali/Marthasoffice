@@ -5,10 +5,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { Toaster, toast } from "sonner";
 import { useRouter } from "next/navigation";
-
+import { useLanguage } from '../LanguageContext';
+import LanguageToggle from './ToggleLanguage';
 
 export const Form = () => {
 
+  const { translations } = useLanguage();
 
 
   return (
@@ -25,18 +27,17 @@ export const Form = () => {
           <div className="block items-center lg:-mx-10 lg:flex">
             <div className="lg:w-1/2 lg:mx-10">
               <h3 className="text-2xl font-semibold  text-white lg:text-3xl">
-              Passez à l’action :
+              {translations.FormTitle}
               </h3>
 
               <p className="mt-4 text-white text-lg">
-              Rencontrons nous et ensemble poursuivons votre développement professionnel. 
-              </p>
+              {translations.Formdescription}              </p>
               <form action="https://formsubmit.co/contact@marthas-office.com" method="POST" className="mt-12">
 
                 <div className="-mx-2 md:items-center md:flex">
                   <div className="flex-1 px-2">
                     <label className="block mb-2 text-sm text-white">
-                      Nom complet
+                    {translations.FormName}
                     </label>
                     <input
                       type="text"
@@ -49,7 +50,7 @@ export const Form = () => {
 
                   <div className="flex-1 px-2 mt-4 md:mt-0">
                     <label className="block mb-2 text-sm text-white">
-                      Adresse e-mail
+                    {translations.Mail}
                     </label>
                     <input
                       type="email"
@@ -61,7 +62,7 @@ export const Form = () => {
                   </div>
                   <div className="flex-1 px-2 mt-4 md:mt-0">
                     <label className="block mb-2 text-sm text-white">
-                      Numéro de téléphone
+                    {translations.Numero}
                     </label>
                     <input
                       type="telephone"
@@ -93,7 +94,7 @@ export const Form = () => {
                 >
                   
                     <span className="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-red">
-                      Envoyer
+                    {translations.Envoyer}
                     </span>
                  
                 </button>
