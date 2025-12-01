@@ -6,12 +6,19 @@ import { X, Menu } from 'lucide-react'; // Assurez-vous que les noms des icônes
 import Image from 'next/image';
 import { useLanguage } from '../LanguageContext';
 import LanguageToggle from './ToggleLanguage';
+<<<<<<< HEAD
 import { frenchTranslations } from '../locales/fr-default';
 
 export const NavbarDesktop = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const langContext = useLanguage();
   const translations = langContext?.translations ?? frenchTranslations;
+=======
+
+export const NavbarDesktop = () => {
+  const [isMenuOpen, setMenuOpen] = useState(false);
+  const { translations } = useLanguage();
+>>>>>>> ffb32841ddabed46d039076eb7e704db7b482ec8
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
@@ -27,7 +34,11 @@ export const NavbarDesktop = () => {
               <div className="flex items-center gap-4 w-full"> <Link href="/">
               <Image src="/icons8-poupée-russe-96.png" width={40} height={40}  alt="logo" title="logoheader" />
               </Link>
+<<<<<<< HEAD
              <a href="/"><h1 className="font-bold text-red flex justify-between text-2xl gap-2">{translations?.SiteName || "Martha's"}  <span className="text-blue ">     {translations?.SiteNameSuffix || 'Office'}  </span> </h1></a> 
+=======
+             <a href="/"><h1 className="font-bold text-red flex justify-between text-2xl gap-2">Martha's  <span className="text-blue ">     Office  </span> </h1></a> 
+>>>>>>> ffb32841ddabed46d039076eb7e704db7b482ec8
 
                 <div className="hidden mr-4 lg:block w-full text-center items-center ml-36" >
                 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 "use client"
 import { Footer } from '@/src/app/components/Footer'
 import { NavbarDesktop } from '@/src/app/components/NavbarDesktop'
@@ -49,6 +50,14 @@ import { Footer } from '@/src/app/components/Footer'
 import { NavbarDesktop } from '@/src/app/components/NavbarDesktop'
 import { NavbarMobile } from '@/src/app/components/navbarMobile'
 import Image from 'next/image';
+=======
+import { Footer } from '@/src/app/components/Footer'
+import { NavbarDesktop } from '@/src/app/components/NavbarDesktop'
+import { NavbarMobile } from '@/src/app/components/navbarMobile'
+import React, { useEffect, useState } from "react";
+import Image from 'next/image';
+import { useLanguage } from '../../../LanguageContext';
+>>>>>>> ffb32841ddabed46d039076eb7e704db7b482ec8
 
 
 

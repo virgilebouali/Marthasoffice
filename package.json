@@ -4,9 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+<<<<<<< HEAD
     "translate:libre": "node ./scripts/translate-locales-libre.js",
     "translate:deepl": "node ./scripts/translate-locales-deepl.js",
     "translate:google": "node ./scripts/translate-locales-google.js",
+=======
+>>>>>>> ffb32841ddabed46d039076eb7e704db7b482ec8
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -34,10 +37,15 @@
     "framer-motion": "^11.0.8",
     "i18next": "^23.11.5",
     "lucide-react": "^0.323.0",
+<<<<<<< HEAD
     "next": "^16.0.6",
     "next-i18next": "^15.3.0",
     "node-fetch": "^2.6.9",
     "@vitalets/google-translate-api": "^8.0.0",
+=======
+    "next": "14.1.0",
+    "next-i18next": "^15.3.0",
+>>>>>>> ffb32841ddabed46d039076eb7e704db7b482ec8
     "node-mailjet": "^6.0.5",
     "nodemailer": "^6.9.11",
     "react": "^18",

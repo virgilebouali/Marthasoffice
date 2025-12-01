@@ -3,10 +3,15 @@ import Link from 'next/link'
 import React from 'react'
 import { useLanguage } from '../LanguageContext';
 import LanguageToggle from './ToggleLanguage';
+<<<<<<< HEAD
 import { frenchTranslations } from '../locales/fr-default';
 const BlogPosts = () => {
   const langContext = useLanguage();
   const translations = langContext?.translations ?? frenchTranslations;
+=======
+const BlogPosts = () => {
+  const { translations } = useLanguage();
+>>>>>>> ffb32841ddabed46d039076eb7e704db7b482ec8
 
   return (
 <section>

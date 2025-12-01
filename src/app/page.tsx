@@ -20,6 +20,7 @@ import BackToTopButton from "./components/backToTop";
 import { useRouter } from 'next/navigation';
 import { Toaster, toast } from 'sonner'
 import BlogPosts from "./components/BlogPosts";
+import { LanguageProvider } from "./LanguageContext";
 
 
 export default function Home() {
@@ -51,10 +52,7 @@ export default function Home() {
 
     if (!alreadyRedirected) {
       // Rediriger vers /intro et marquer la redirection
-      // Preserve the locale segment (e.g. /en -> /en/intro)
-      const pathParts = window.location.pathname.split('/').filter(Boolean);
-      const currentLocale = pathParts[0] && (pathParts[0] === 'en' || pathParts[0] === 'fr') ? pathParts[0] : 'fr';
-      router.push(`/${currentLocale}/intro`);
+      router.push('/intro');
       localStorage.setItem(redirectKey, 'true');
     }
   }, []);

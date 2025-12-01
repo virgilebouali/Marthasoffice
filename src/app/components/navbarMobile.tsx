@@ -6,11 +6,17 @@ import { X, Menu } from 'lucide-react'; // Assurez-vous que les noms des icônes
 import Image from 'next/image';
 import { useLanguage } from '../LanguageContext';
 import LanguageToggle from './ToggleLanguage';
+<<<<<<< HEAD
 import { frenchTranslations } from '../locales/fr-default';
 export const NavbarMobile = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const langContext = useLanguage();
   const translations = langContext?.translations ?? frenchTranslations;
+=======
+export const NavbarMobile = () => {
+  const [isMenuOpen, setMenuOpen] = useState(false);
+  const { translations } = useLanguage();
+>>>>>>> ffb32841ddabed46d039076eb7e704db7b482ec8
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
@@ -23,7 +29,11 @@ export const NavbarMobile = () => {
           <nav className="w-screen justify-between top-0 z-50 block px-4 py-2 border rounded-none shadow-md botext-blue-500/80 bg-white  lg:px-8 lg:py-4">
             <div className="flex items-right justify-between text-blue-gray-900 ">
             <Image src="/icons8-poupée-russe-96.png" width={40} height={40}  alt="" />
+<<<<<<< HEAD
               <h1 className="font-bold text-red flex justify-between text-2xl gap-2">{translations?.SiteName || "Martha's"}  <span className="text-blue ">     {translations?.SiteNameSuffix || 'Office'} </span></h1>
+=======
+              <h1 className="font-bold text-red flex justify-between text-2xl gap-2">Martha's  <span className="text-blue ">     Office </span></h1>
+>>>>>>> ffb32841ddabed46d039076eb7e704db7b482ec8
               <div className="flex items-center gap-4 border-t-2">
                 <div className="hidden mr-4 lg:block">
                   <ul className="flex flex-col gap-2 mt-2 mb-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
@@ -39,7 +49,11 @@ export const NavbarMobile = () => {
                     </li>
                     <li className="block p-1 text-blue-gray-900">
                       <Link href="#" className="flex items-center hover:text-blue-600 hover:shadow-xl">
+<<<<<<< HEAD
                         {translations?.Contact || 'Contact'}
+=======
+                        Contact
+>>>>>>> ffb32841ddabed46d039076eb7e704db7b482ec8
                       </Link>
                     </li>
                   </ul>

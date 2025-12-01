@@ -1,11 +1,20 @@
 "use client"
 // LanguageContext.js
+<<<<<<< HEAD
 import React, { createContext, useState, useContext, useEffect } from 'react';
+=======
+import React, { createContext, useState, useContext } from 'react';
+
+// Import des fichiers de traduction
+import fr from '../../public/locales/fr.json'
+import en from '../../public/locales/en.json'
+>>>>>>> ffb32841ddabed46d039076eb7e704db7b482ec8
 
 // Créez le contexte
 const LanguageContext = createContext();
 
 // Créez un composant fournisseur de contexte
+<<<<<<< HEAD
 export const LanguageProvider = ({ children, initialLanguage = 'fr', initialTranslations = {} }) => {
   const [language, setLanguage] = useState(initialLanguage);
   const [translations, setTranslations] = useState(
@@ -38,13 +47,22 @@ export const LanguageProvider = ({ children, initialLanguage = 'fr', initialTran
     loadTranslations(language);
     return () => { mounted = false; };
   }, [language, initialLanguage, initialTranslations]);
+=======
+export const LanguageProvider = ({ children }) => {
+  const [language, setLanguage] = useState('fr');
+  const translations = language === 'fr' ? fr : en;
+>>>>>>> ffb32841ddabed46d039076eb7e704db7b482ec8
 
   const toggleLanguage = () => {
     setLanguage((prevLang) => (prevLang === 'fr' ? 'en' : 'fr'));
   };
 
   return (
+<<<<<<< HEAD
     <LanguageContext.Provider value={{ language, setLanguage, toggleLanguage, translations, loading }}>
+=======
+    <LanguageContext.Provider value={{ language, toggleLanguage, translations }}>
+>>>>>>> ffb32841ddabed46d039076eb7e704db7b482ec8
       {children}
     </LanguageContext.Provider>
   );

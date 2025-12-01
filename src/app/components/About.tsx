@@ -4,10 +4,15 @@ import Link from 'next/link';
 import { Button } from '../../../@/components/ui/button';
 import { useLanguage } from '../LanguageContext';
 import LanguageToggle from './ToggleLanguage';
+<<<<<<< HEAD
 import { frenchTranslations } from '../locales/fr-default';
 export const About = () => {
     const langContext = useLanguage();
     const translations = langContext?.translations ?? frenchTranslations;
+=======
+export const About = () => {
+    const { translations } = useLanguage();
+>>>>>>> ffb32841ddabed46d039076eb7e704db7b482ec8
 
         const features = [
             {
