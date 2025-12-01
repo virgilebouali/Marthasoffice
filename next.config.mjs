@@ -7,19 +7,17 @@ const nextConfig = {
       ]
   },
   
-  // NOUVELLE SECTION DE REDIRECTIONS
-  async redirects() {
+  // REMPLACEZ 'redirects' PAR CETTE SECTION 'rewrites'
+  async rewrites() {
       return [
           {
               source: '/',
-              // Redirige l'URL racine (https://www.marthas-office.com/) 
-              // vers votre langue par défaut
+              // Réécrit l'URL racine vers la locale par défaut sans changer l'URL dans la barre d'adresse
               destination: '/fr', 
-              permanent: true, // Utilise le code d'état 308 (Permanent Redirect)
           },
       ];
   },
-  // FIN DE LA NOUVELLE SECTION
+  // FIN DE 'rewrites'
 };
 
 export default nextConfig;
