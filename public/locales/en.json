@@ -1,6 +1,5 @@
 {
   "Services": "Services",
-<<<<<<< HEAD
   "Partner": "Become a partner",
   "FirstTitle": "Administrative and Financial Director",
   "Name": "Cynthia Cereyon",
@@ -24,40 +23,13 @@
   "Resultsdescription": "Our services, combining expertise and a human approach, have enabled the creation of sustainable startups, growth in competitive environments, the recovery of prices and profitability, the relocation of projects, and the resolution of administrative, HR and financial disputes.",
   "Why": "Why does it work?",
   "Whydescription": "With my network of technical, legal, accounting and financial experts we automate and plan strategically while providing solid legal protection. Our projects cover medical practices, service companies, financial joint ventures, construction, trading, food BtoC, and well-being coaching.",
-  "JoursHomme": "Men's Days",
-=======
-  "Partner": "Become a Partner",
-  "FirstTitle": "Chief Financial Officer",
-  "Name" : "Cynthia Cereyon",
-  "SecondTitle": "My job is to simplify yours.",
-  "description" : "A multifunctional contribution and expertise to free you from administrative tasks and allow you to grow your business with confidence.",
-  "Abouttitle": "6 CFO Services",
-  "Aboutdescription": "Chief Financial Officer",
-  "About1": "Finance & Accounting",
-  "About1description": "We strengthen your financial management with our expertise in accounting, financing, and cash flow leverage.",
-  "About2": "Administration and Contract Management",
-  "About2description": "Simplify your business management with our customized administrative and contractual service.",
-  "About3": "Taxation and Legal Monitoring",
-  "About3description": "Secure your business with our tax optimization advice and legal and regulatory monitoring.",
-  "About4": "Strategic and Organizational Consulting",
-  "About4description": "Benefit from our tailor-made strategic and organizational advice to support your company's development.",
-  "About5": "Digital Transformation, IT, and AI Integration",
-  "About5description": "We help you achieve your IT, digital, and technological projects and ambitions with our support.",
-  "About6": "Human Resources",
-  "About6description": "Together, we build your Human Capital with successful recruitment and HR follow-up.",
-  "Results": "Results",
-  "Resultsdescription": "Our services, combining expertise and a human approach, have enabled the creation of sustainable startups, growth in competitive environments, price and profitability recovery, project relocation, and resolution of administrative, HR, and financial disputes.",
-  "Why": "Why does it work?",
-  "Whydescription": "With my network of technical, legal, accounting, and financial experts, we automate and plan strategically while providing solid legal protection. Our projects cover medical practices, service companies, financial joint ventures, construction, trading, BtoC food, and wellness coaching.",
   "JoursHomme": "Man-Days",
->>>>>>> ffb32841ddabed46d039076eb7e704db7b482ec8
   "Projets": "Projects",
   "Expertise": "Expertise",
   "BlogTitle": "My articles and",
   "Blogdescription": "Dive into my professional journey through these articles detailing my experiences.",
-<<<<<<< HEAD
   "FormTitle": "Take action:",
-  "Formdescription": "Let’s meet and together continue your professional development.",
+  "Formdescription": "Let's meet and together continue your professional development.",
   "FormName": "Name",
   "Mail": "E-mail address",
   "Numero": "Phone number",
@@ -75,7 +47,7 @@
   "ArticleTitle1": "My trip around the world and its impact on my professional life",
   "1paragraphe1": "Last year I had a six-month break and fulfilled my daughter's dream by embarking on a world tour, visiting 17 countries.",
   "1paragraphe2": "During this time, I also met with entrepreneurs and start-up owners, offering them advice and services that helped them thrive.",
-  "1paragraphe3": "A longtime friend I met in Africa thanked me by saying, “You literally changed my life, Cynthia, by changing my perception of life and professional events.” She then redesigned her business strategy, adjusted her pricing to make her business more profitable, and has since successfully grown her new business.",
+  "1paragraphe3": "A longtime friend I met in Africa thanked me by saying, \"You literally changed my life, Cynthia, by changing my perception of life and professional events.\" She then redesigned her business strategy, adjusted her pricing to make her business more profitable, and has since successfully grown her new business.",
   "1paragraphe4": "Another new travel companion I met in South America recognized the importance of my work. A business leader facing financial challenges said: \"Thank you for everything. We, as leaders, need your services in the short to medium term.\" These experiences have reinforced my conviction that my work can have a real and significant impact on the lives of the entrepreneurs I support.",
   "1paragraphe5": "Inspired by these experiences, I decided to create \"Marthas Office\", a company dedicated to supporting and guiding entrepreneurs in their growth.",
   "SiteName": "Martha's",
@@ -97,33 +69,3 @@
   "3paragraphe4": "Successful CFOs also focus on integrating finance throughout the organization, ensuring that financial information is integrated across all key functions. This approach promotes better decision-making and increased accountability in different departments.",
   "3paragraphe5": "To learn more about the key responsibilities and skills required for modern CFOs, see Toptal's article on the role and responsibilities of the modern CFO (WorldClassTalent)."
 }
-=======
-  "FormTitle": "Take Action:",
-  "Formdescription": "Let's meet and continue your professional development together.",
-  "FormName": "Name",
-  "Mail": "Email Address",
-  "Numero": "Phone Number",
-  "Message": "Message",
-  "Envoyer": "Send",
-    "BlogTitle1": "My Journey Around the World",
-    "Blogdescription1": "Last year, I had the benefit of a six-month break and fulfilled my daughter's dream by embarking on a world tour, visiting 17 countries...",
-    "BlogDate1": "May 7, 2024",
-    "BlogTitle2": "The Role of CFO",
-    "Blogdescription2": "The role of the Chief Financial Officer (CFO) has significantly evolved, especially in the context of digital transformation...",
-    "BlogDate2": "March 23, 2024",
-    "BlogTitle3": "Key Responsibilities of the CFO",
-    "Blogdescription3": "The responsibilities of the Chief Financial Officer (CFO) have expanded beyond traditional financial management to include leadership...",
-    "BlogDate3": "February 12, 2024",
-    
-    "ArticleTitle1": "My journey around the world and its impact on my professional life",
-      "1paragraphe1": "Last year, I took a six-month break and fulfilled my daughter's dream by embarking on a world tour, visiting 17 countries.",
-      "1paragraphe2": "During this time, I also met entrepreneurs and startup owners, offering them advice and services that helped them thrive.",
-      "1paragraphe3": "A longtime friend I met in Africa thanked me, saying: \"You have literally changed my life, Cynthia, by changing my perception of life and professional events.\" She then reconsidered her business strategy, adjusted her prices to make her business more profitable, and has successfully developed her new business since.",
-      "1paragraphe4": "Another new travel companion I met in South America recognized the importance of my work. A business leader facing financial challenges said: \"Thank you for everything. We, as leaders, need your services in the short or medium term.\" These experiences strengthened my belief that my work can have a real and significant impact on the lives of the entrepreneurs I support.",
-      "1paragraphe5": "Inspired by these experiences, I decided to create \"Marthas Office,\" a company dedicated to supporting and guiding entrepreneurs in their growth."
-    
-    
-
-
-}
->>>>>>> ffb32841ddabed46d039076eb7e704db7b482ec8
