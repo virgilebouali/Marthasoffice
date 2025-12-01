@@ -4,12 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-<<<<<<< HEAD
     "translate:libre": "node ./scripts/translate-locales-libre.js",
     "translate:deepl": "node ./scripts/translate-locales-deepl.js",
     "translate:google": "node ./scripts/translate-locales-google.js",
-=======
->>>>>>> ffb32841ddabed46d039076eb7e704db7b482ec8
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
