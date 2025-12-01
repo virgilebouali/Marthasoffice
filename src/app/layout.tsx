@@ -1,11 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-<<<<<<< HEAD
 // LanguageProvider is provided by the nested /[locale] layout
-=======
-import { LanguageProvider } from './LanguageContext';
->>>>>>> ffb32841ddabed46d039076eb7e704db7b482ec8
 
 const poppins = Poppins({ subsets: ["latin"], weight: ['400', '700'] });
 
@@ -27,11 +23,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   const { title, description, canonical } = metadata;
 
   return (
-<<<<<<< HEAD
     <html className="scroll-smooth">
-=======
-    <html lang="fr" className="scroll-smooth">
->>>>>>> ffb32841ddabed46d039076eb7e704db7b482ec8
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -51,17 +43,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <link rel="canonical" href={String(canonical ?? '')} />
         <title>{String(title ?? '')}</title>
       </head>
-<<<<<<< HEAD
       <body className={poppins.className}>
         <div className="shadow-2xl shadow-white bg-gray-100">{children}</div>
       </body>
-=======
-      <LanguageProvider>
-        <body className={poppins.className}>
-          <div className="shadow-2xl shadow-white bg-gray-100">{children}</div>
-        </body>
-      </LanguageProvider>
->>>>>>> ffb32841ddabed46d039076eb7e704db7b482ec8
+    </html>
+  );
+}
 
     </html>
   );

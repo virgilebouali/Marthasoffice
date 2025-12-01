@@ -1,24 +1,16 @@
-<<<<<<< HEAD
 "use client"
-=======
->>>>>>> ffb32841ddabed46d039076eb7e704db7b482ec8
 import React from 'react'
 import Image from 'next/image'
 import  Link  from 'next/link'
 import { NavbarDesktop } from './NavbarDesktop'
 import { useLanguage } from '../LanguageContext';
 import LanguageToggle from './ToggleLanguage';
-<<<<<<< HEAD
 import { frenchTranslations } from '../locales/fr-default';
 export const Hero = () => {
     const langContext = useLanguage();
-    const translations = langContext?.translations ?? frenchTranslations;  return (
-=======
-export const Hero = () => {
-	const { translations } = useLanguage();
+    const translations = langContext?.translations ?? frenchTranslations;
 
   return (
->>>>>>> ffb32841ddabed46d039076eb7e704db7b482ec8
     <div className="lg:block sm:block md:block  lg:w-full sm:w-fit w-auto ease-in">
 		<NavbarDesktop />
 <section
@@ -42,15 +34,9 @@ export const Hero = () => {
 		<div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left lg:-mt-12">
 		   <h2 className="mb-4 text-2xl mt-8 text-white" >                      {translations.FirstTitle}
 		   <span> </span>  </h2>
-<<<<<<< HEAD
-				<h2 className="text-7xl font-bold text-white">
-					{translations?.Name || 'Cynthia Cereyon'}
-				</h2>
-=======
 			<h2 className="text-7xl font-bold text-white">
-				Cynthia Cereyon
+				{translations?.Name || 'Cynthia Cereyon'}
 			</h2>
->>>>>>> ffb32841ddabed46d039076eb7e704db7b482ec8
 			<h2 className=" sm:text-4xl md:text-4xl font-bold leadi mt-4">
 				<span className="text-white text-4xl w-fit">  {translations.SecondTitle}</span>
 			</h2>
