@@ -7,19 +7,12 @@ import { Toaster, toast } from "sonner";
 import { useRouter } from "next/navigation";
 import { useLanguage } from '../LanguageContext';
 import LanguageToggle from './ToggleLanguage';
-<<<<<<< HEAD
 import { frenchTranslations } from '../locales/fr-default';
 
 export const Form = () => {
 
   const langContext = useLanguage();
   const translations = langContext?.translations ?? frenchTranslations;
-=======
-
-export const Form = () => {
-
-  const { translations } = useLanguage();
->>>>>>> ffb32841ddabed46d039076eb7e704db7b482ec8
 
 
   return (

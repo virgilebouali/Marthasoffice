@@ -4,15 +4,10 @@ import React from 'react'
 import CountUp from 'react-countup';
 import { useLanguage } from '../LanguageContext';
 import LanguageToggle from './ToggleLanguage';
-<<<<<<< HEAD
 import { frenchTranslations } from '../locales/fr-default';
 export const Stats = () => {
   const langContext = useLanguage();
   const translations = langContext?.translations ?? frenchTranslations;
-=======
-export const Stats = () => {
-  const { translations } = useLanguage();
->>>>>>> ffb32841ddabed46d039076eb7e704db7b482ec8
 
   return (
     <div> <div className=" py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8  rounded-xl -z-50 "

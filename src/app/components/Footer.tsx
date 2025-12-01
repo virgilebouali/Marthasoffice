@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 "use client"
 import React from 'react'
 import Link from 'next/link'
@@ -7,11 +6,6 @@ import { frenchTranslations } from '../locales/fr-default';
 export const Footer = () => {
   const langContext = useLanguage();
   const translations = langContext?.translations ?? frenchTranslations;
-=======
-import React from 'react'
-import Link from 'next/link'
-export const Footer = () => {
->>>>>>> ffb32841ddabed46d039076eb7e704db7b482ec8
 
   return (
     <div>
@@ -26,13 +20,8 @@ export const Footer = () => {
                 <div className="flex flex-col">
                     <div className="lg:flex hidden mt-24 mb-12 flex-row justify-between">
                         <div className="">
-<<<<<<< HEAD
                           <h3 className="text-4xl text-white font-bold">{translations?.SiteNameFull || "Martha's Office"}</h3>
                           <p>{translations?.ByName ? `${translations.ByName} ${translations.Name || 'Cynthia Cereyon'}` : `by ${translations?.Name || 'Cynthia Cereyon'}`}</p>
-=======
-                          <h3 className="text-4xl text-white font-bold">Martha's Office</h3>
-                          <p>by Cynthia Cereyon</p>
->>>>>>> ffb32841ddabed46d039076eb7e704db7b482ec8
                         </div>
                         <Link href="" className=" md:block cursor-pointer text-white hover:text-pink uppercase font-bold">                                      
 
@@ -48,11 +37,7 @@ export const Footer = () => {
                         </div>
                     </div>
                     <hr className="border-blue"/>
-<<<<<<< HEAD
                     <p className="w-full text-center my-4 text-white">{translations?.Copyright || `Martha's Office Copyright © 2024`}</p>
-=======
-                    <p className="w-full text-center my-4 text-white">{`Martha's Office Copyright © 2024`}</p>
->>>>>>> ffb32841ddabed46d039076eb7e704db7b482ec8
                 </div>
             </div>
         </div></div>

@@ -1,4 +1,3 @@
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
@@ -6,10 +5,6 @@ const nextConfig = {
         { protocol: 'https', hostname: 'cdn.rareblocks.xyz' },
         { protocol: 'https', hostname: 'assets.website-files.com' }
       ]
-    },
-    i18n: {
-      locales: ['en', 'fr'],
-      defaultLocale: 'fr',
     },
   };
   

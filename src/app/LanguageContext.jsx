@@ -53,5 +53,3 @@ export const LanguageProvider = ({ children, initialLanguage = 'fr', initialTran
 // Hook personnalisé pour utiliser le contexte
 export const useLanguage = () => useContext(LanguageContext);
 
-// Hook personnalisé pour utiliser le contexte
-export const useLanguage = () => useContext(LanguageContext);

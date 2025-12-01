@@ -3,14 +3,15 @@ import { LanguageProvider } from '../LanguageContext'
 import fs from 'fs'
 import path from 'path'
 
-interface LocaleLayoutProps {
+export default async function LocaleLayout({
+  children,
+  params,
+}: {
   children: React.ReactNode
-  params: { locale: string }
-}
-
-export default async function LocaleLayout({ children, params }: LocaleLayoutProps) {
+  params: Promise<{ locale: string }>
+}) {
   const supported = ['en', 'fr']
-  const locale = await params.locale
+  const { locale } = await params
   const lang = supported.includes(locale) ? locale : 'fr'
 
   // Try to read pre-generated translations on the server and pass them to the client provider

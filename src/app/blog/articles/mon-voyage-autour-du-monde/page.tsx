@@ -1,10 +1,10 @@
 "use client"
-import { Footer } from '@/src/app/components/Footer'
-import { NavbarDesktop } from '@/src/app/components/NavbarDesktop'
-import { NavbarMobile } from '@/src/app/components/navbarMobile'
+import { Footer } from '../../../components/Footer'
+import { NavbarDesktop } from '../../../components/NavbarDesktop'
+import { NavbarMobile } from '../../../components/navbarMobile'
 import Image from 'next/image';
-import { useLanguage } from '@/src/app/LanguageContext'
-import { frenchTranslations } from '@/src/app/locales/fr-default'
+import { useLanguage } from '../../../LanguageContext'
+import { frenchTranslations } from '../../../locales/fr-default'
 
 
 const Article1 = () => {
